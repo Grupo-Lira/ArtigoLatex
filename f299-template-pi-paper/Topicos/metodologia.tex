@@ -1,3 +1,214 @@
-A seção de Metodologia explica aos leitores quais procedimentos, abordagens, desenhos e tratamento realizamos na pesquisa, o que permitirá replicar os estudos, entender a linearidade entre a abordagem dos objetivos e os resultados obtidos, determinar sua adequação e relevância e evidenciar qualquer viés na maneira como o estudo foi elaborado e realizado. Em outras palavras, é uma estrutura contextual que apresenta um caminho lógico para responder a perguntas que você levanta no início de sua tese ou artigo \cite{knuth:84}. 
+Este projeto propõe o desenvolvimento de uma plataforma digital gamificada com o objetivo
+de auxiliar nos possíveis indícios do Transtorno de Déficit de Atenção (TDA) em adultos. A
+metodologia fundamenta-se na aplicação adaptada do Teste de Desempenho Contínuo
+(TDC), tradicionalmente utilizado em avaliações neuropsicológicas para medir aspectos da
+atenção sustentada, impulsividade, tempo de resposta e variabilidade das reações. (CPT3). A
+principal diferença do presente trabalho está na integração do TDC com o rastreamento
+ocular em tempo real, o que permite a coleta de dados visuais complementares durante a
+execução das tarefas.
 
-É importante que nesta seção, você descreva todas as ferramentas e tecnologias utilizadas para o desenvolvimento da sua pesquisa \cite{boulic:91}. Lembre-se de detalhar para que serve cada ferramenta e tecnologia e o motivo da sua escolha.
+O experimento foi estruturado como um jogo digital de temática espacial, composto por três
+fases com níveis crescentes de dificuldade. A mecânica de jogo foi desenhada para simular
+os princípios do TDC, promovendo a exposição contínua a estímulos visuais por períodos
+prolongados e exigindo respostas rápidas e consistentes por parte do participante. Ao longo
+de cada fase, o sistema registra métricas relacionadas à atenção, como erros de omissão
+(quando o participante não responde a um estímulo-alvo), erros de comissão (quando
+responde a estímulos irrelevantes), tempo de reação e variabilidade temporal das respostas.
+
+Durante toda a experiência, o rastreamento ocular é realizado em segundo plano, utilizando
+bibliotecas como o MediaPipe para capturar os pontos de fixação visual do usuário por meio
+da webcam. Esses dados permitem identificar padrões de atenção ou desatenção de acordo
+com nossa base de dados em cada etapa da atividade. Todas as fases contam com música
+de fundo, cuja intensidade e ritmo são ajustados conforme o nível de dificuldade, de forma a
+potencializar a sobrecarga sensorial e dificultar a concentração.
+
+Na primeira fase, o participante deve fixar o olhar por cinco segundos em cinco alvos
+estáticos, representados por estrelas, enquanto elementos animados surgem ao redor. A
+música de fundo nesta etapa apresenta um ritmo moderado. O objetivo é avaliar a
+capacidade de manter a atenção em um ponto fixo durante um tempo determinado,
+ignorando estímulos visuais e auditivos periféricos.
+
+Na segunda fase, introduzem-se estímulos dinâmicos, visando mensurar a rastreabilidade
+ocular. O participante deve acompanhar com o olhar cinco estrelas em movimento contínuo
+pela tela. A música, nesta etapa, torna-se mais intensa, com ritmo acelerado, a fim de
+aumentar o desafio atencional.
+
+Na terceira fase, a demanda cognitiva é acentuada por meio da exigência de alternância
+rápida do foco visual entre diferentes regiões da tela, com menor previsibilidade espacial.
+Dez estrelas surgem, uma por vez, em locais variados e por tempo limitado, exigindo
+resposta ocular imediata. A música de fundo atinge seu nível máximo de agitação,
+intensificando a dificuldade da tarefa. O desempenho nesta fase é utilizado como indicador
+da agilidade atencional e da capacidade de redirecionamento rápido do foco visual.
+Ao término das três fases, o sistema apresenta ao participante um resumo dos resultados
+com base em métricas como número de acertos e tempo médio de reação. Para isso, são
+utilizados os três registros mais recentes de rastreamento ocular, que correspondem às três
+fases concluídas pelo jogador. Com base nesses dados, o sistema gera um feedback textual
+interpretativo, apresentando mensagens como: “Sua atenção está conforme o esperado”,
+“Sua atenção está acima do esperado” ou “Sua atenção está abaixo do esperado.”, de acordo
+com o desempenho observado.
+
+A plataforma é desenvolvida com tecnologias web, permitindo acesso remoto e execução
+direta em navegadores modernos. O teste é realizado de forma autônoma pelo usuário, em
+ambiente silencioso e seguindo instruções fornecidas pela própria plataforma.
+
+Para melhor compreensão da sequência lógica do teste, a Figura 1 ilustra o fluxo de
+execução da plataforma desde o acesso inicial até a geração do feedback final. O fluxograma
+apresenta as etapas do experimento, desde o momento em que o usuário acessa o sistema e
+recebe instruções sobre o funcionamento do jogo, até a execução da primeira fase, baseada
+no Teste de Desempenho Contínuo. Nessa fase, são introduzidos estímulos visuais
+distratores, e a plataforma registra o foco ocular do usuário utilizando visão computacional. A
+partir disso, os dados coletados — como desvios de atenção, acertos, erros e omissões —
+são analisados e comparados com uma base de dados para que o sistema gere um feedback
+interpretativo personalizado ao participante.
+
+\begin{figure}[H]
+    \centering
+    \caption{Fluxo da Plataforma}%
+    \label{fig:fluxograma-plataforma}
+    \includegraphics[width=\textwidth]{fluxogramametodologia}
+    \SourceOrNote{Autoria Própria (2024)}
+\end{figure}
+
+Para desenvolver a landing page da equipe do projeto, foi utilizada a linguagem de marcação
+HyperText Markup Language (HTML), responsável por definir a estrutura e o conteúdo
+principal da página. A estilização visual foi realizada com Cascading Style Sheets (CSS), o que
+permitiu aplicar cores, espaçamentos, tipografias e outros elementos de design, assegurando
+que a página estivesse visualmente alinhada com a identidade da equipe. Além disso,
+utilizou-se JavaScript, que introduziu interatividade e dinamismo à página, proporcionando
+animações e ações responsivas, aprimorando a experiência de navegação e tornando o
+conteúdo mais atraente para o usuário.
+
+No desenvolvimento do sistema de rastreamento ocular (Eye Tracking), optou-se pela
+linguagem Python devido à sua compatibilidade com bibliotecas de visão computacional e
+análise de dados, bem como à sua eficiência e facilidade de aprendizado. Python permite a
+criação de programas com menos linhas de código, o que aumenta a produtividade dos
+desenvolvedores e agiliza o desenvolvimento. Além disso, sua grande biblioteca padrão
+contém diversos módulos reutilizáveis, que eliminam a necessidade de escrever código do
+zero para muitas tarefas.
+
+Com o intuito de capturar imagens em tempo real da câmera, utilizou-se a biblioteca OpenCv,
+e o framework MediaPipe Face Mesh foi escolhido para a detecção facial. O Face Mesh do
+MediaPipe identifica 468 landmarks (pontos de referência) na face, mapeando características
+como olhos, boca, nariz e contorno facial. Esse mapeamento detalhado permite rastrear
+micro movimentos da íris, possibilitando identificar a direção e o foco visual em tempo real.
+
+Além dessas ferramentas, a biblioteca NumPy foi utilizada para estruturar os dados de
+coordenadas em matrizes, e a biblioteca JSON auxiliou no armazenamento dos dados.
+Python ainda oferece a vantagem de portabilidade, podendo ser executado em diversos
+sistemas operacionais como Windows, macOS e Linux. Sua ampla comunidade global de
+suporte facilita o aprendizado e proporciona soluções rápidas a problemas, contribuindo para
+a manutenção e evolução contínua do sistema.
+
+Além dos elementos já mencionados, para o desenvolvimento do jogo web, a equipe optou
+por utilizar TypeScript no front-end, uma linguagem baseada em JavaScript que adiciona
+tipagem estática ao código, tornando-o mais robusto e facilitando a identificação de erros
+durante o desenvolvimento. A estrutura do front-end foi construída com o framework Next.js,
+que permite a criação de aplicações web modernas com renderização híbrida (estática e
+dinâmica), roteamento automático e excelente desempenho. O uso combinado de TypeScript
+e Next.js proporcionou uma base sólida para o desenvolvimento da interface do jogo,
+garantindo maior escalabilidade, organização do código e melhor experiência do usuário.
+
+Para o desenvolvimento dos códigos mencionados, utilizou-se o Visual Studio Code (VS
+Code), um Ambiente de Desenvolvimento Integrado (IDE) criado pela Microsoft em 2015. O
+VS Code é um editor de código aberto amplamente reconhecido e utilizado na comunidade
+de desenvolvimento por sua versatilidade e eficiência. Ele suporta diversas linguagens de
+programação, oferecendo uma interface amigável e funcionalidades que potencializam o
+processo de desenvolvimento. Hanashiro (2022)
+
+Em relação a diagramação, foi utilizada a Unified Modeling Language (UML), desenvolvida
+por Grady Booch, James Rumbaugh e Ivar Jacobson, que serve para documentar projetos de
+software. A UML pode ser usada para visualizar, especificar, construir e documentar os
+artefatos de um sistema de software. No atual projeto, foram construídos dois diagramas
+UML, sendo eles o Diagrama de Classes, o Diagrama de Objetos e o Diagrama de Caso de
+Uso.
+
+O diagrama de classes é uma representação visual da estrutura de um sistema, descrevendo
+classes, seus atributos, métodos e os relacionamentos entre elas. Enquanto o Diagrama de
+Objetos é uma representação visual que exibe instâncias específicas de classes em um
+momento particular do sistema, mostrando objetos com seus valores atuais de atributos e as
+relações entre eles. Diferente do diagrama de classes, que é mais abstrato e define a
+estrutura geral, o diagrama de objetos detalha uma visão concreta do estado do sistema em
+determinado instante. Por fim, o Diagrama de Caso de Uso serve para ilustrar os atores e
+como eles interagem com o sistema, a fim de definir requisitos funcionais e o seu contexto.
+Apesar de não ser tão detalhado como os demais, utiliza diversos símbolos para contribuir no
+fluxo básico dos eventos.
+
+Para a diagramação dos modelos UML no projeto, foi utilizada a ferramenta LucidChart. O
+LucidChart é uma plataforma de criação de diagramas baseada na nuvem, amplamente
+usada para projetar e documentar sistemas complexos de forma visual.
+
+O Diagrama de Infraestrutura de Rede é uma representação visual da arquitetura de
+comunicação e conectividade entre os componentes de hardware e software de um sistema.
+Esse tipo de diagrama é essencial para compreender como os dados trafegam na rede,
+identificar pontos críticos e garantir a segurança, a escalabilidade e a eficiência da
+infraestrutura.
+
+Para a elaboração e documentação da infraestrutura de rede no projeto, foi utilizada a
+ferramenta draw.io. O draw.io é uma aplicação gratuita baseada na web, amplamente
+utilizada para criar diagramas técnicos, incluindo fluxogramas, topologias de rede, diagramas
+UML e arquiteturas de sistemas.
+
+Em relação à elaboração do banco de dados, optou-se pelo uso de um banco de dados não
+relacional, mais especificamente o MongoDB. O MongoDB adota o formato de documentos
+no padrão JSON (JavaScript Object Notation), permitindo que os dados sejam armazenados
+em estruturas aninhadas e dinâmicas, o que se mostrou especialmente vantajoso para a
+manipulação de informações provenientes dos testes de rastreamento ocular.
+
+Diferentemente dos bancos relacionais, que organizam os dados em tabelas com colunas
+fixas, o MongoDB permite a criação de documentos com campos distintos dentro da mesma
+coleção, o que torna o sistema mais escalável e flexível, especialmente para aplicações que
+lidam com grandes volumes de dados sensoriais.
+
+Para o desenvolvimento do banco de dados e gerenciamento das coleções, foi utilizada a
+ferramenta MongoDB Compass, uma interface gráfica oficial do MongoDB que permite a
+visualização, consulta e manipulação dos dados de forma intuitiva. A ferramenta facilita a
+inspeção de documentos, a criação de filtros avançados utilizando a linguagem de consulta
+do MongoDB (MQL – MongoDB Query Language), além de oferecer suporte para validação
+de esquema e análise de desempenho.
+
+Para desenvolver a logo e a identidade visual da equipe e do jogo, bem como a prototipação
+das telas do software, foi utilizada a plataforma colaborativa de design Figma. Essa
+ferramenta permite criar interfaces e protótipos de forma intuitiva, possibilitando a
+construção de fluxos de navegação e layouts de maneira integrada. Além disso, o Figma
+favorece a colaboração em tempo real entre designers e demais membros da equipe, o que
+contribuiu para uma criação mais eficiente e alinhada com os objetivos do projeto. Villain
+Matheus; Silveira (2024)
+
+Além disso, utilizamos a ferramenta SEBRAE Canvas para estruturar o modelo de negócios do
+jogo. Um modelo de negócios descreve como uma organização cria, entrega e captura valor,
+abordando os principais componentes que influenciam o sucesso de uma empresa. Essa
+ferramenta oferece um quadro segmentado em áreas como parcerias, proposta de valor,
+estrutura de custos e fontes de receita, facilitando o planejamento de cada componente do
+modelo de negócios e a definição dos elementos essenciais do projeto. Vale ressaltar que o
+Canvas foi criado antes do desenvolvimento do jogo, pois ele proporciona uma visão clara e
+abrangente do sistema.
+
+A análise SWOT foi realizada com o objetivo de identificar de forma estratégica os pontos
+fortes, pontos fracos, oportunidades e ameaças relacionadas ao desenvolvimento do
+software. Essa técnica permitiu uma visão abrangente do contexto interno e externo do
+projeto, servindo como base para a definição de estratégias mais eficazes e para a tomada
+de decisões ao longo do processo de desenvolvimento.
+Para a organização e gestão de tarefas durante o desenvolvimento do sistema, foram
+adotadas metodologias ágeis e ferramentas que favorecem o trabalho colaborativo e a
+entrega eficiente de valor.
+
+Dentre as metodologias utilizadas, destaca-se o Scrum, um framework de gerenciamento ágil
+que permite que equipes se auto-organizem e trabalhem em direção a um objetivo comum.
+Com o Scrum, foram incorporados valores fundamentais como compromisso, coragem, foco,
+abertura e respeito. As atividades foram estruturadas em sprints semanais, com a aplicação
+dos principais artefatos da metodologia, como o backlog, a sprint backlog e as reuniões.
+(Amazon)
+
+Outra metodologia adotada foi o Kanban, um sistema visual originado na Toyota, no Japão,
+que visa otimizar o fluxo de trabalho. O Kanban organiza as tarefas em colunas como “A
+Fazer”, “Em Progresso” e “Concluído”, oferecendo uma visão clara do andamento do projeto e
+das prioridades. (TOTVS, 2023)
+
+Para apoiar a aplicação dessas metodologias, foi utilizada a ferramenta Trello, um sistema de
+gerenciamento de projetos baseado em quadros visuais. Por meio do Trello, as tarefas foram
+organizadas em cartões, que podiam ser movidos entre listas, proporcionando um
+acompanhamento visual do progresso. Cada cartão permitia a inclusão de checklists, datas
+de vencimento e responsáveis, oferecendo uma visão detalhada de cada etapa do projeto.
+Assim, a combinação entre o Trello e a metodologia Kanban contribuiu significativamente
+para a organização, eficiência e colaboração no desenvolvimento do sistema. (Magalhães,
+2022)
