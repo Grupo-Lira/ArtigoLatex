@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber fatec-template"] 1760723768.27975 "fatec-template.bcf" "fatec-template.bbl" "fatec-template" 1760724665.05544 0
+["biber fatec-template"] 1760829902.71993 "fatec-template.bcf" "fatec-template.bbl" "fatec-template" 1760831771.19873 0
   "fatec-article.bib" 1760562206 9560 6c4fa70e5038d91810046bdd75023c04 ""
-  "fatec-template.bcf" 1760724664 114029 a775c9d92cdd48ea6a086b990207194f "pdflatex"
+  "fatec-template.bcf" 1760831770 114029 a775c9d92cdd48ea6a086b990207194f "pdflatex"
   (generated)
   "fatec-template.bbl"
   "fatec-template.blg"
   (rewritten before read)
-["pdflatex"] 1760724657.72016 "c:/Users/giova/OneDrive/Área de Trabalho/ArtigoLatex/f299-template-pi-paper/fatec-template.tex" "fatec-template.pdf" "fatec-template" 1760724665.05643 0
+["pdflatex"] 1760831759.83586 "c:/Users/giova/OneDrive/Área de Trabalho/ArtigoLatex/f299-template-pi-paper/fatec-template.tex" "fatec-template.pdf" "fatec-template" 1760831771.2 0
   "C:/Users/giova/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1731866597 122199 f0a029dcadf437d1491ad2875c164ac4 ""
   "C:/Users/giova/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730048657 24225047 22c0cfe9e657f8487c5195db7e977911 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -31,12 +31,16 @@
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/ntxsy7.tfm" 1727540467 2000 c8518036fe884fa294a1eeb2da3075ed ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/ntxsyc.tfm" 1727540467 1028 2f6cbe812325cff65b38e4c0a517f4cb ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/ntxsym.tfm" 1727540466 1560 755acbe6da75f914298c79fa8bb324fd ""
+  "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/txmiaSTbb.tfm" 1727540467 920 99acdf374993fd46fd345f9cac168080 ""
+  "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/txmiaX.tfm" 1727540466 1708 0e60bf8db0699a0f3e7689a7572f87b4 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb" 1256929440 97408 f595704ec2a07246c2d6f7b602587452 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb" 1256929440 96107 daf52840b555e3b38f9679b629b5e2df ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss9.pfb" 1256929440 95954 abf895092b61a36df40fa7d488db188a ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb" 1256929440 119663 1a3a2206591ddc98c6d6c6271a282516 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb" 1256929440 109054 c1447b33e20f8aea130da0724b569017 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb" 1256929440 110323 19372944fba298bb4c4758abff959582 ""
+  "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb" 1727540467 56815 b27b5bd4ce89a9e0ed516572b28e11a8 ""
+  "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/vf/public/newtx/ntxmia.vf" 1727540467 2052 32313fcb5c0cec3f7956da7328e62ee4 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1704647332 150008 7a05b0fdc0167c04e192003e780ab195 ""
@@ -186,17 +190,19 @@
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
   "Illustrations/fatec.jpg" 1760558232 52462 b72184f489d14cab2f4098401c2496e6 ""
+  "Illustrations/fluxograma.png" 1760831469 78398 458cbea843f784f0bda8bedaa309ed27 ""
   "Illustrations/primeira-fase.png" 1760560887 2159353 8cd9975f5ff6b975ecbf099a022ac11b ""
+  "Illustrations/segunda-fase.png" 1760831141 2065822 9d5f1f86a65f75dbbda16106b202704b ""
   "Topicos/estadodaarte.tex" 1760558232 4136 dc200ce57475da7e0c1408668c90e179 ""
   "Topicos/introducao.tex" 1760558232 4614 f2be869185b9dd7920ec8125559f0b60 ""
-  "Topicos/metodologia.tex" 1760724656 12069 de38c95bfe0e7c4558a60b9e9cd92965 ""
+  "Topicos/metodologia.tex" 1760831759 13677 ed5d9542b8409b109ea0290b5a64968d ""
   "Topicos/objetivo.tex" 1760560472 883 1238bf36a0deb9988d8fa48299951163 ""
   "c:/Users/giova/OneDrive/Área de Trabalho/ArtigoLatex/f299-template-pi-paper/fatec-template.tex" 1760558232 5617 a07d2318d32356f046ddf30f89067e8d ""
   "fatec-article.sty" 1760558232 46706 89cb42f747460219c6634986dfb8de6e ""
-  "fatec-template.aux" 1760724664 4523 181be2a9c73a773ee0007a7d569005c0 "pdflatex"
-  "fatec-template.bbl" 1760723770 15740 2074995f6ebabb896d717f9a96557876 "biber fatec-template"
-  "fatec-template.out" 1760724664 236 f50029508be67e707da6ba76da20bdc7 "pdflatex"
-  "fatec-template.run.xml" 1760724664 2617 4d46f5d56bcd78c60e0607a558d03956 "pdflatex"
+  "fatec-template.aux" 1760831770 4519 98b53fafcb8df95d12227f311a2d9fde "pdflatex"
+  "fatec-template.bbl" 1760829907 15740 2074995f6ebabb896d717f9a96557876 "biber fatec-template"
+  "fatec-template.out" 1760831770 236 f50029508be67e707da6ba76da20bdc7 "pdflatex"
+  "fatec-template.run.xml" 1760831770 2617 4d46f5d56bcd78c60e0607a558d03956 "pdflatex"
   "fatec-template.tex" 1760558232 5617 a07d2318d32356f046ddf30f89067e8d ""
   (generated)
   "fatec-template.aux"

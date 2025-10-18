@@ -1,0 +1,391 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Elbaum2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1edbe547e1e6951a0226205513b87d4f}{%
+           family={Elbaum},
+           familyi={E\bibinitperiod},
+           given={Tomer},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=538cfc2d8865e56028eebbe30ef56074}{%
+           family={Braw},
+           familyi={B\bibinitperiod},
+           given={Yoram},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3025cd5952314a61c661ff3efd841368}{%
+           family={Lev},
+           familyi={L\bibinitperiod},
+           given={Astar},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74d2c28c59efa4002140f2169ff246b8}{%
+           family={Rassovsky},
+           familyi={R\bibinitperiod},
+           given={Yuri},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b1a2903de9ea292d35067ca96a68c47}
+      \strng{fullhash}{c165770828acefba079a823df23c2303}
+      \strng{bibnamehash}{9b1a2903de9ea292d35067ca96a68c47}
+      \strng{authorbibnamehash}{9b1a2903de9ea292d35067ca96a68c47}
+      \strng{authornamehash}{9b1a2903de9ea292d35067ca96a68c47}
+      \strng{authorfullhash}{c165770828acefba079a823df23c2303}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{21}
+      \field{title}{Attention-Deficit/Hyperactivity Disorder (ADHD): Integrating the MOXO-dCPT with an Eye Tracker Enhances Diagnostic Precision}
+      \field{volume}{20}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.3390/s20216386
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/20/21/6386
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/20/21/6386
+      \endverb
+    \endentry
+    \entry{Nascimento2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3a5fd811852f0a5738c59607521e65ed}{%
+           family={Nascimento},
+           familyi={N\bibinitperiod},
+           given={Lucas\bibnamedelima Martins},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f36dc475966b4eb9a8343bcffb85400}{%
+           family={Menezes},
+           familyi={M\bibinitperiod},
+           given={Carolina\bibnamedelima Baptista},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dbdf5712eb8c05971a18f5bbc8cb4702}
+      \strng{fullhash}{dbdf5712eb8c05971a18f5bbc8cb4702}
+      \strng{bibnamehash}{dbdf5712eb8c05971a18f5bbc8cb4702}
+      \strng{authorbibnamehash}{dbdf5712eb8c05971a18f5bbc8cb4702}
+      \strng{authornamehash}{dbdf5712eb8c05971a18f5bbc8cb4702}
+      \strng{authorfullhash}{dbdf5712eb8c05971a18f5bbc8cb4702}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ciências {\&}amp; Cognição}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{A RELAÇÃO ENTRE A PRÁTICA REGULAR DE VIDEOGAMES E ATENÇÃO SUSTENTADA}
+      \field{volume}{25}
+      \field{year}{2020}
+      \field{pages}{141\bibrangedash 156}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://revista.cienciasecognicao.org/index.php/cec/article/view/1661
+      \endverb
+      \verb{url}
+      \verb https://revista.cienciasecognicao.org/index.php/cec/article/view/1661
+      \endverb
+    \endentry
+    \entry{papoutsaki2016webgazer}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=bbe2f09b26238be11430f093f18b66ec}{%
+           family={Papoutsaki},
+           familyi={P\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b05fc0ad90688b074812e5e69a795bc}{%
+           family={Sangkloy},
+           familyi={S\bibinitperiod},
+           given={Patsorn},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a31f3089e52baf6d9c895388f2faca3}{%
+           family={Laskey},
+           familyi={L\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaaea9b91775d1b795c8e0f9b16f628a}{%
+           family={Daskalova},
+           familyi={D\bibinitperiod},
+           given={Nediyana},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91c81e97008e78c504c7dbe6bc7c1a79}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           suffix={Jeff\bibnamedelimb e\bibnamedelima Hays},
+           suffixi={J\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim H\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{ab3a389ff6b9cf1679f9e9ef43654048}
+      \strng{fullhash}{abf8b1c0ff961cf9c111370eb7044ce7}
+      \strng{bibnamehash}{ab3a389ff6b9cf1679f9e9ef43654048}
+      \strng{authorbibnamehash}{ab3a389ff6b9cf1679f9e9ef43654048}
+      \strng{authornamehash}{ab3a389ff6b9cf1679f9e9ef43654048}
+      \strng{authorfullhash}{abf8b1c0ff961cf9c111370eb7044ce7}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Anais da 25ª Conferência Internacional Conjunta sobre Inteligência Artificial (IJCAI)}
+      \field{month}{7}
+      \field{title}{WebGazer: Rastreamento ocular escalável via webcam usando interações do usuário}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://webgazer.cs.brown.edu/
+      \endverb
+      \verb{url}
+      \verb https://webgazer.cs.brown.edu/
+      \endverb
+    \endentry
+    \entry{BVS2014}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=80804373b16dba3b00425c2edc9dd8ff}{%
+           family={Saúde},
+           familyi={S\bibinitperiod},
+           given={Ministerio},
+           giveni={M\bibinitperiod},
+           givenun=0,
+           prefix={da},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{80804373b16dba3b00425c2edc9dd8ff}
+      \strng{fullhash}{80804373b16dba3b00425c2edc9dd8ff}
+      \strng{bibnamehash}{80804373b16dba3b00425c2edc9dd8ff}
+      \strng{authorbibnamehash}{80804373b16dba3b00425c2edc9dd8ff}
+      \strng{authornamehash}{80804373b16dba3b00425c2edc9dd8ff}
+      \strng{authorfullhash}{80804373b16dba3b00425c2edc9dd8ff}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Transtorno do déficit de atenção com hiperatividade - TDAH}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://bvsms.saude.gov.br/transtorno-do-deficit-de-atencao-com-hiperatividade-tdah/
+      \endverb
+      \verb{url}
+      \verb https://bvsms.saude.gov.br/transtorno-do-deficit-de-atencao-com-hiperatividade-tdah/
+      \endverb
+    \endentry
+    \entry{Wiebe2024}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=72e5f8c4d982cb5ced26ae607c0c8aa6}{%
+           family={Wiebe},
+           familyi={W\bibinitperiod},
+           given={Annika},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=206829838d676cfd4bfc02230d91949e}{%
+           family={Selaskowski},
+           familyi={S\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f727f05af6151b09ca2199947b8861b6}{%
+           family={Paskin},
+           familyi={P\bibinitperiod},
+           given={Martha},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cbf72e672cac48b64fed20b63e8e110}{%
+           family={Asché},
+           familyi={A\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2e695fc4d98b9a6c268bc6fc3df54c8}{%
+           family={Pakos},
+           familyi={P\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0f02769e62214e00df41f0bc39c823a}{%
+           family={Aslan},
+           familyi={A\bibinitperiod},
+           given={Behrem},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e136702f09f390c358b97e12bbb595a6}{%
+           family={Lux},
+           familyi={L\bibinitperiod},
+           given={Silke},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a9bfc9212c3b5a4475d2a1551f91349}{%
+           family={Philipsen},
+           familyi={P\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3114350ee65e450d6e9309cd27ed504}{%
+           family={Braun},
+           familyi={B\bibinitperiod},
+           given={Niclas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{76396b3b7e1aa24b7d8bc99c0ef133f2}
+      \strng{fullhash}{97941de3efc4b06dd5381c340ede424c}
+      \strng{bibnamehash}{76396b3b7e1aa24b7d8bc99c0ef133f2}
+      \strng{authorbibnamehash}{76396b3b7e1aa24b7d8bc99c0ef133f2}
+      \strng{authornamehash}{76396b3b7e1aa24b7d8bc99c0ef133f2}
+      \strng{authorfullhash}{97941de3efc4b06dd5381c340ede424c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2158-3188}
+      \field{journaltitle}{Translational Psychiatry}
+      \field{number}{1}
+      \field{title}{Virtual reality-assisted prediction of adult ADHD based on eye tracking, EEG, actigraphy and behavioral indices: a machine learning analysis of independent training and test samples}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{508}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41398-024-03217-y
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41398-024-03217-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41398-024-03217-y
+      \endverb
+    \endentry
+    \entry{Lim2024}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=1b8742e9f6f4a859a0b840ed65b7d70b}{%
+           family={Yoo},
+           familyi={Y\bibinitperiod},
+           given={Jae\bibnamedelima Hyun},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aad7515f4429acc2c1e8f2a100a1f980}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={ChangSu},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5508a27d0066f0576b817b44c0f43b2f}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Joon\bibnamedelima Shik},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b618f8559ce410995fdb85163a8b387}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bohyun},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b55d3d4ef952bce616b6711aaffcb4d}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Chi-Hyun},
+           giveni={C\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32473a04d40a9138a8165c2cab0cd99d}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={Hyunchan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc5c7066994921c027da2201863e71dc}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Doug\bibnamedelima Hyun},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d23e4a52af713c1b224da5e110e7c382}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyungjun},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b82216b651e38c980f9ec4267a3f7002}{%
+           family={Cheon},
+           familyi={C\bibinitperiod},
+           given={Hosang},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa692a3f48d3a2a6ac8fc27e50bab503}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jae-Won},
+           giveni={J\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a45076efe4d79312a21030a7554f4ecb}
+      \strng{fullhash}{d89599fe521c7391ec3c23e2c02f027b}
+      \strng{bibnamehash}{a45076efe4d79312a21030a7554f4ecb}
+      \strng{authorbibnamehash}{a45076efe4d79312a21030a7554f4ecb}
+      \strng{authornamehash}{a45076efe4d79312a21030a7554f4ecb}
+      \strng{authorfullhash}{d89599fe521c7391ec3c23e2c02f027b}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1664-0640}
+      \field{journaltitle}{Frontiers in Psychiatry}
+      \field{title}{Development of an innovative approach using portable eye tracking to assist ADHD screening: a machine learning study}
+      \field{volume}{15}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3389/fpsyt.2024.1337595
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1337595
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1337595
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
