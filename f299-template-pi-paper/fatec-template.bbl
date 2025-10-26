@@ -19,6 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{WebGazerDoc}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ce7bd95ab5793fc0c398775cddbe88c}{%
+           family={{Brown HCI Group}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ce7bd95ab5793fc0c398775cddbe88c}
+      \strng{fullhash}{8ce7bd95ab5793fc0c398775cddbe88c}
+      \strng{bibnamehash}{8ce7bd95ab5793fc0c398775cddbe88c}
+      \strng{authorbibnamehash}{8ce7bd95ab5793fc0c398775cddbe88c}
+      \strng{authornamehash}{8ce7bd95ab5793fc0c398775cddbe88c}
+      \strng{authorfullhash}{8ce7bd95ab5793fc0c398775cddbe88c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Documentação Wiki}
+      \field{title}{WebGazer.js: 3.2 Gaze Prediction}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://deepwiki.com/brownhci/WebGazer/3.2-gaze-prediction
+      \endverb
+      \verb{url}
+      \verb https://deepwiki.com/brownhci/WebGazer/3.2-gaze-prediction
+      \endverb
+    \endentry
     \entry{sep-chinese-room}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3937f16a64a3c9674d9b0e6d0e2e0bce}{%

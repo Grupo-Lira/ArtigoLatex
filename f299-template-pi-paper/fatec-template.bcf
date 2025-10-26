@@ -2470,6 +2470,7 @@
     <bcf:citekey order="15" intorder="1">Wiebe2024</bcf:citekey>
     <bcf:citekey order="16" intorder="1">Wiebe2024</bcf:citekey>
     <bcf:citekey order="17" intorder="1">papoutsaki2016webgazer</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">WebGazerDoc</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
