@@ -33,6 +33,22 @@ objetivo é avaliar a capacidade de manter a atenção em um ponto fixo durante 
 
 Na segunda fase, o participante deve manter o foco em cinco estrelas estáticas, que brilham individualmente em sequência (estímulo primário). Simultaneamente, três planetas em movimento transitam pela tela, atuando como distratores (estímulos secundários) cuja presença não é mencionada nas instruções. Ao término da exibição, o participante é submetido a um teste de reconhecimento: sete opções de planetas são apresentadas, sendo que apenas três transitaram na tela. O participante deve indicar, por meio de botões IoT, quais planetas foram reconhecidos durante o trânsito. O reconhecimento correto de planetas efetivamente exibidos é contabilizado como acerto, enquanto a seleção de planetas não exibidos configura erro. Essa etapa avalia simultaneamente o desempenho na tarefa principal e a detecção incidental de estímulos periféricos. A interpretação do reconhecimento de estímulos secundários como indicador positivo ou negativo será definida após validação com grupos de referência (crianças com e sem TDAH), considerando duas hipóteses alternativas: (1) maior detecção incidental pode refletir dificuldade de inibição de distratores e associar-se ao TDA; (2) menor detecção, decorrente de foco mais exclusivo na tarefa principal, pode estar mais associada ao TDA. A trilha sonora, mais intensa e acelerada nesta fase, eleva a carga cognitiva e permite observar o impacto de múltiplos estímulos simultâneos na manutenção da atenção.
 
+\begin{figure}[H]
+    \centering
+    \caption{Pergunta da segunda fase}%
+    \label{fig:perguntas-segunda-fase}
+    \includegraphics[width=\textwidth]{perguntas-segunda-fase.png}%
+    \SourceOrNote{Autoria Própria (2025)}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Resultado da segunda fase}%
+    \label{fig:fim-segunda-fase}
+    \includegraphics[width=\textwidth]{fim-segunda-fase.png}%
+    \SourceOrNote{Autoria Própria (2025)}
+\end{figure}
+
 Para a construção do dispositivo de controle da \textit{IoT}, foram empregados os seguintes componentes eletrônicos: uma placa de desenvolvimento Arduino, sete botões do tipo push-button, sete resistores de 10 k$\Omega$, uma protoboard e cabos de conexão. Os botões foram conectados às portas digitais do Arduino, configuradas como entradas com resistores pull-down para garantir leituras estáveis. Dessa forma, ao término da segunda fase do jogo, o participante registra os planetas que conseguiu observar, pressionando o botão correspondente a ele. O Arduino atua como uma interface de comunicação de hardware, detectando o pressionamento físico dos botões IoT. Por meio da comunicação serial, o microcontrolador transmite o evento acionado ao sistema. O servidor é responsável por receber e interpretar este sinal do botão selecionado e, na sequência, acionar a função que contabiliza os acertos e os erros de inibição do participante para a fase.
 
 Em futuras iterações do projeto, planeja-se o aperfeiçoamento estético e ergonômico do controle, por meio da substituição dos botões convencionais por peças personalizadas, modeladas em software CAD e fabricadas via impressão 3D, com design mais atrativo e ergonômico para crianças. Além disso, planeja-se construir uma case para o controle utilizando filamentos de garrafa PET, visando a sustentabilidade ambiental do projeto.
@@ -45,11 +61,27 @@ Em futuras iterações do projeto, planeja-se o aperfeiçoamento estético e erg
     \SourceOrNote{Autoria Própria (2025)}
 \end{figure}
 
-Na terceira fase, a demanda cognitiva é intensificada pela necessidade de alternância rápida do foco visual entre diferentes regiões da tela, caracterizadas por menor previsibilidade espacial. Nessa etapa, uma estrela surge de forma estática, exigindo resposta ocular imediata do participante. Simultaneamente, um segundo estímulo estático é apresentado, alternando entre os estados ligado e desligado em intervalos regulares. Quando esse estímulo é ativado (ascende), o participante deve manter o olhar fixo sobre ele até que se apague, o que permite avaliar a atenção sustentada e o controle do direcionamento ocular. A trilha sonora atinge seu nível máximo de intensidade e agitação, contribuindo para aumentar a complexidade da tarefa. O desempenho do participante nesta fase é utilizado como indicador da agilidade atencional e da capacidade de redirecionamento e manutenção do foco visual diante de estímulos dinâmicos.
+Na terceira fase, a demanda cognitiva é intensificada pela necessidade de alternância rápida do foco visual entre diferentes regiões da tela, caracterizadas por menor previsibilidade espacial. Nessa etapa, uma estrela surge de forma estática, exigindo resposta ocular imediata do participante. Simultaneamente, um segundo estímulo estático é apresentado, alternando entre os estados ligado e desligado em intervalos regulares. Quando esse estímulo é ativado (ascende), o participante deve manter o olhar fixo sobre ele até que se apague, o que permite avaliar a atenção dividida e o controle do direcionamento ocular. A trilha sonora atinge seu nível máximo de intensidade e agitação, contribuindo para aumentar a complexidade da tarefa. O desempenho do participante nesta fase é utilizado como indicador da agilidade atencional e da capacidade de redirecionamento e manutenção do foco visual diante de estímulos dinâmicos.
 
-Ao final de cada fase, o servidor é responsável por enviar ao cliente (front-end) a quantidade de acertos, erros de omissão e erros de comissão atingidos pelo participante.
+Ao final de cada fase, o servidor é responsável por enviar ao cliente (front-end) a quantidade de acertos, erros de omissão e erros de comissão atingidos pelo participante. Assim, o front-end exibe um resumo do desempenho ao usuário, conforme ilustrado na Figura \ref{fig:fim-fase1-fase3}.
 
-Ao término das três fases, o sistema gera um pré-diagnóstico com base nas métricas TDC. Para isso, são utilizados os registros de desempenho e os dados mais recentes de rastreamento ocular obtidos durante as fases. Este pré-diagnóstico é elaborado por um módulo de IA, que interpreta as métricas e o desempenho do participante. O feedback resultante é apresentado em duas formas: (1) uma mensagem textual interpretativa, como: “Sua atenção está conforme o esperado”, “Sua atenção está acima do esperado” ou “Sua atenção está abaixo do esperado”, de acordo com o desempenho observado; e (2) a exibição de uma porcentagem que representa a precisão do olhar capturada pelo sistema de rastreamento ocular.
+\begin{figure}[H]
+    \centering
+    \caption{Resultados por fase}%
+    \label{fig:fim-fase1-fase3}
+    \includegraphics[width=\textwidth]{fim-fase1-fase3.png}%
+    \SourceOrNote{Autoria Própria (2025)}
+\end{figure}
+
+Ao término das três fases, o sistema gera um pré-diagnóstico com base nas métricas TDC. Para isso, são utilizados os registros de desempenho e os dados mais recentes de rastreamento ocular obtidos durante as fases. Este pré-diagnóstico é elaborado por um módulo de IA, que interpreta as métricas e o desempenho do participante. O feedback resultante é apresentado em duas formas: (1) uma mensagem textual interpretativa, como: “Sua atenção está conforme o esperado”, “Sua atenção está acima do esperado” ou “Sua atenção está abaixo do esperado”, de acordo com o desempenho observado; e (2) a exibição de uma porcentagem que representa a precisão do olhar capturada pelo sistema de rastreamento ocular, conforme ilustrado na Figura \ref{fig:fim-geral}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Pré-diagnóstico}%
+    \label{fig:fim-geral}
+    \includegraphics[width=\textwidth]{fim-geral.png}%
+    \SourceOrNote{Autoria Própria (2025)}
+\end{figure}
 
 Com o objetivo de aprofundar a compreensão do tema e promover um alinhamento mais preciso entre os aspectos técnicos e psicológicos do projeto, foi conduzida uma pesquisa de campo com quatro profissionais da área da Psicologia. As entrevistas buscaram avaliar a viabilidade técnica da proposta, identificar os sintomas mais recorrentes do TDA e compreender os tipos de estímulos que mais influenciam os processos de distração em indivíduos com esse transtorno.
 
