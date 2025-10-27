@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.27)  26 OCT 2025 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.27)  27 OCT 2025 18:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1292,25 +1292,25 @@ Package microtype Info: Loading generic protrusion settings for font family
 <./Illustrations/primeira-fase.png, id=69, 1927.2pt x 1043.9pt>
 File: ./Illustrations/primeira-fase.png Graphic file (type png)
 <use ./Illustrations/primeira-fase.png>
-Package pdftex.def Info: ./Illustrations/primeira-fase.png  used on input line 19.
+Package pdftex.def Info: ./Illustrations/primeira-fase.png  used on input line 17.
 (pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
  [5]
 <./Illustrations/segunda-fase.png, id=75, 1927.2pt x 1043.9pt>
 File: ./Illustrations/segunda-fase.png Graphic file (type png)
 <use ./Illustrations/segunda-fase.png>
-Package pdftex.def Info: ./Illustrations/segunda-fase.png  used on input line 32.
+Package pdftex.def Info: ./Illustrations/segunda-fase.png  used on input line 30.
 (pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
  [6 <./Illustrations/primeira-fase.png>] [7 <./Illustrations/segunda-fase.png>]
 <./Illustrations/terceira-fase.png, id=90, 1927.2pt x 1043.9pt>
 File: ./Illustrations/terceira-fase.png Graphic file (type png)
 <use ./Illustrations/terceira-fase.png>
-Package pdftex.def Info: ./Illustrations/terceira-fase.png  used on input line 48.
+Package pdftex.def Info: ./Illustrations/terceira-fase.png  used on input line 44.
 (pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
  [8 <./Illustrations/terceira-fase.png>] [9]
 <./Illustrations/fluxograma.png, id=103, 857.30287pt x 511.76193pt>
 File: ./Illustrations/fluxograma.png Graphic file (type png)
 <use ./Illustrations/fluxograma.png>
-Package pdftex.def Info: ./Illustrations/fluxograma.png  used on input line 77.
+Package pdftex.def Info: ./Illustrations/fluxograma.png  used on input line 73.
 (pdftex.def)             Requested size: 483.69687pt x 288.73996pt.
 )
 Package cleveref Info: loaded `brazilian' language definitions on input line 115.
@@ -1373,14 +1373,14 @@ Package logreq Info: Writing requests to 'fatec-template.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  34102 strings out of 474486
- 617651 string characters out of 5743754
+ 617645 string characters out of 5743754
  1947542 words of memory out of 5000000
- 55740 multiletter control sequences out of 15000+600000
- 608637 words of font info for 150 fonts, out of 8000000 for 9000
+ 55734 multiletter control sequences out of 15000+600000
+ 609015 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,19n,131p,1934b,4566s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,19n,131p,1932b,4566s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss9.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb>
-Output written on fatec-template.pdf (11 pages, 7307169 bytes).
+Output written on fatec-template.pdf (11 pages, 7307385 bytes).
 PDF statistics:
  169 PDF objects out of 1000 (max. 8388607)
  31 named destinations out of 1000 (max. 500000)
