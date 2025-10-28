@@ -80,8 +80,47 @@
 
     Este diagrama ilustra concretamente como os dados fluem desde a interação do usuário com uma fase do jogo até a geração do pré-diagnóstico individualizado, demonstrando a aplicação prática da estrutura modelada no Diagrama de Classes através de uma instância específica do sistema.
 
+    \subsection*{Diagrama de banco de dados}
+    \addcontentsline{toc}{section}{Diagrama de banco de dados}
 
-\section*{Canavs}
+    O modelo conceitual representa a estrutura de armazenamento de dados para o sistema de rastreamento ocular e análise de atenção.Esta arquitetura foi projetada acomoda os dados complexos gerados durante as três fases de testes do sistema.
+
+    O banco de dados é composto por seis coleções principais inter-relacionadas:
+
+    \begin{figure}[H]
+\centering
+\caption{Diagrama de banco de dados}%
+\label{fig:diagrama-de-banco-de-dados}
+\includegraphics[width=0.8\textwidth]{Logos/mongo.png}
+\SourceOrNote{Do próprio autor (2025)}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{usuarios}: Armazena informações de cadastro das crianças que jogarão as fases. Os campos incluem: \texttt{\_id}, \texttt{email}, \texttt{num\_telefone}, \texttt{senha}, \texttt{nome}, \texttt{idade}, e \texttt{sexo}.
+
+    \item \textbf{dados\_experimentos} (Fase 1): Registra dados brutos dos experimentos realizados na primeira fase. Contém dois subdocumentos principais: \texttt{historico\_olhar\_fase1} (para a sequência temporal do olhar) e \texttt{resultados\_alvos\_fase1} (para resultados específicos por alvo).
+
+    \item \textbf{dados\_experimentos\_fase\_2} (Fase 2): Coleção dedicada aos dados da segunda fase, focando em métricas de desempenho. Os campos principais são: \texttt{acertos}, \texttt{planetas\_vistos}, e \texttt{planetas\_ignorados}.
+
+    \item \textbf{dados\_experimentos\_fase\_3} (Fase 3): Coleção para dados da terceira fase. Contém dois subdocumentos principais: \texttt{historico\_olhar} (para a trajetória completa do olhar) e \texttt{resultados\_alvos} (para métricas temporais por alvo específico).
+
+    \item \textbf{resultados\_analise}: Contém resultados processados e análises estatísticas da primeira fase. Inclui o array \texttt{analise\_por\_alvo} para análise granular e um subdocumento \texttt{estatisticas\_resumo} com métricas consolidadas (tempos de reação, totais de acertos, comissão e omissão).
+
+    \item \textbf{resultado\_final}: Apresenta o diagnóstico consolidado final, baseado nos dados de todas as três fases. Inclui uma \texttt{mensagem\_resultado} descritiva e a \texttt{porcentagem\_tda} quantitativa.
+\end{itemize}
+
+
+O modelo segue um fluxo lógico de processamento de dados definido:
+\begin{enumerate}
+    \item Coleta de Dados do Usuário.
+    \item Coleta de Dados Experimentais (Fases 1, 2 e 3).
+    \item Análise Estatística.
+    \item Geração do Resultado Final e Diagnóstico (preenchido por análise de IA).
+\end{enumerate}
+
+ Esta estrutura permite uma análise compreensiva do desempenho de atenção através do rastreamento ocular, desde a coleta bruta de dados até a geração de diagnósticos individuais, mantendo a flexibilidade necessária para acomodar os diferentes tipos de dados gerados em cada fase experimental.
+
+\section*{Canvas}
     \addcontentsline{toc}{section}{Canvas}
     
     Esse é um exemplo de diagrama de redes, você deverá descrever todos os componentes presentes no diagrama (atores e funcionalidades do sistema).
