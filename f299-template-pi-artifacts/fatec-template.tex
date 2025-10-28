@@ -35,7 +35,11 @@
     \subsection*{Diagrama de Caso de Uso}
     \addcontentsline{toc}{section}{Diagrama de Caso de Uso}
 
-    Esse é um exemplo de diagrama de caso de uso, você deverá descrever todos os componentes presentes no diagrama (atores e funcionalidades do sistema).
+    Este diagrama de caso de uso representa a interação entre os principais atores: Usuário, APi e IA Preditiva. Além dos casos de uso associados ao sistema.
+    O fluxo inicia com o Usuário, que aciona o caso de uso “Inicia o teste”. A partir dessa ação, o sistema executa uma sequência de processos automatizados que incluem o “Rastreamento ocular durante as fases” e a “Coleta das métricas”. Em seguida, os dados obtidos são enviados ao banco de dados pela API.
+    Após o armazenamento, a IA Preditiva coleta os resultados e realiza a análise dos dados. Com base nessa análise, o sistema gera um resultado interpretativo sobre o desempenho atencional do participante.  Por fim, o caso de uso “Exibe o resultado para o usuário” completa o ciclo, apresentando o relatório obtido no teste.
+
+
 
 \begin{figure}[H]
 \centering
@@ -44,6 +48,9 @@
  \includegraphics[width=1.1\textwidth]{Logos/caso-de-uso.png}
 \SourceOrNote{Do próprio autor (2025)}
 \end{figure}
+
+
+    Esse diagrama sintetiza o comportamento funcional do sistema, evidenciando a integração entre os módulos de captura de dados via eye tracking, processamento por inteligência artificial e comunicação por meio de API. O artefato é fundamental para compreender a estrutura lógica e o fluxo de informações dentro da aplicação proposta.
     
     \subsection*{Diagrama de Classe}
     \addcontentsline{toc}{section}{Diagrama de Classe}
@@ -95,6 +102,9 @@
 \SourceOrNote{Do próprio autor (2025)}
 \end{figure}
 
+    
+
+
 \begin{itemize}
     \item \textbf{usuarios}: Armazena informações de cadastro das crianças que jogarão as fases. Os campos incluem: \texttt{\_id}, \texttt{email}, \texttt{num\_telefone}, \texttt{senha}, \texttt{nome}, \texttt{idade}, e \texttt{sexo}.
 
@@ -123,7 +133,21 @@ O modelo segue um fluxo lógico de processamento de dados definido:
 \section*{Canvas}
     \addcontentsline{toc}{section}{Canvas}
     
-    Esse é um exemplo de diagrama de redes, você deverá descrever todos os componentes presentes no diagrama (atores e funcionalidades do sistema).
+    Esse modelo de negócios foi estruturado de acordo com os nove blocos do Canvas, permitindo visualizar de forma integrada os principais elementos que compõem a proposta de valor, os recursos, os canais e a estrutura operacional do projeto.
+
+    A Proposta de Valor consiste em oferecer um jogo sério que, de maneira gamificada, avalia o desempenho atencional e fornece feedbacks personalizados aos usuários, auxiliando em processos de triagem e apoio diagnóstico.
+
+    Os Canais de entrega envolvem o uso de computadores com câmeras integradas e acesso à internet, com o sistema hospedado em servidor remoto. O Relacionamento com o Cliente baseia-se em experiências interativas e intuitivas, com geração de pré-diagnósticos rápidos e relatórios claros.
+
+    As Fontes de Renda incluem a comercialização do software como serviço (modelo de assinatura mensal), oferecendo relatórios automatizados, alto nível de interatividade e conveniência para profissionais da área.
+
+    Entre os Recursos-Chave, destacam-se a infraestrutura digital (website e hospedagem), a divulgação por meio de anúncios na internet e o compartilhamento de recomendações entre usuários.
+
+    As Atividades-Chave compreendem o desenvolvimento e manutenção do sistema, a aplicação dos testes em ambientes clínicos e educacionais, e a interação direta com o usuário final.
+
+    Os Parceiros-Chave incluem provedores de hospedagem, fornecedores de infraestrutura digital e plataformas de divulgação online.
+
+    Por fim, a Estrutura de Custos abrange despesas fixas com hospedagem, infraestrutura e publicidade, sustentadas pelo modelo de assinatura mensal para acesso ao serviço.
 
 \begin{figure}[H]
 \centering
@@ -133,12 +157,18 @@ O modelo segue um fluxo lógico de processamento de dados definido:
 \SourceOrNote{Do próprio autor (2025)}
 \end{figure}
 
-    Não deixe a seção terminar com a imagem então sempre adicione um texto após a mesma.
+    Esse artefato auxilia na visualização estratégica do projeto Focus Quest, evidenciando sua viabilidade técnica e comercial, além de integrar as dimensões tecnológicas, clínicas e de mercado do produto proposto.
 
 \section*{Diagrama de redes}
     \addcontentsline{toc}{section}{Diagrama de Redes}
     
-    Esse é um exemplo de diagrama de redes, você deverá descrever todos os componentes presentes no diagrama (atores e funcionalidades do sistema).
+    Este diagrama representa a estrutura de redes completa do sistema, desde o funcionamento local no computador do usuário até a coleta e o processamento dos dados do lado do servidor.
+
+    O processo inicia-se no PC do Usuário, onde é executado o \textit{software} do teste gamificado e ocorre a captura dos dados visuais por meio do módulo de \textit{Eye Tracking}, responsável por registrar o movimento ocular do participante durante as tarefas do TDC. Esses dados são enviados para a rede local e encaminhados a um Roteador/\textit{Switch}, que gerencia o tráfego e redireciona as informações para a camada de comunicação externa.
+
+    A seguir, o ISP (\textit{Internet Service Provider}, em português, Provedor de Servico de Internet) encaminha os dados até o ambiente em nuvem, onde está hospedada a \textit{API}, responsável pela coleta e organização das métricas capturadas. As informações processadas são então armazenadas em um banco de dados \textit{NoSQL}.
+
+    Na sequência, os dados são processados pela camada de Inteligência Artificial de Aprendizado Profundo (\textit{Deep Learning AI}), que realiza análises preditivas e interpretações automatizadas dos resultados. Após o processamento, as informações podem ser retornadas ao sistema do usuário ou disponibilizadas para visualização em relatórios analíticos
 
 \begin{figure}[H]
 \centering
@@ -148,7 +178,7 @@ O modelo segue um fluxo lógico de processamento de dados definido:
 \SourceOrNote{Do próprio autor (2025)}
 \end{figure}
 
-    Não deixe a seção terminar com a imagem então sempre adicione um texto após a mesma.
+    Esse diagrama representa a infraestrutura lógica do sistema, evidenciando a integração entre os módulos de coleta via \textit{eye tracking}, comunicação em nuvem, análise de dados com IA e armazenamento distribuído.
 
 \section*{Análise SWOT}
     \addcontentsline{toc}{section}{Análise SWOT}
