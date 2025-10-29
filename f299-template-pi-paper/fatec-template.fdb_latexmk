@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber fatec-template"] 0 "fatec-template.bcf" "fatec-template.bbl" "fatec-template" 1761747977.701 -1
+["biber fatec-template"] 0 "fatec-template.bcf" "fatec-template.bbl" "fatec-template" 1761748504.54041 -1
   "fatec-article.bib" 1761662083 11389 6cde5e0f2004fff1c1d1a70ed61665d5 ""
-  "fatec-template.bcf" 1761747976 114926 2e2678c14fd9fed507f5d56e007eb76d "pdflatex"
+  "fatec-template.bcf" 1761748504 114926 2e2678c14fd9fed507f5d56e007eb76d "pdflatex"
   (generated)
   "fatec-template.bbl"
   "fatec-template.blg"
   (rewritten before read)
-["pdflatex"] 1761747933.44756 "c:/Users/giova/OneDrive/Área de Trabalho/ArtigoLatex/f299-template-pi-paper/fatec-template.tex" "fatec-template.pdf" "fatec-template" 1761747977.70258 0
+["pdflatex"] 1761748484.05603 "c:/Users/giova/OneDrive/Área de Trabalho/ArtigoLatex/f299-template-pi-paper/fatec-template.tex" "fatec-template.pdf" "fatec-template" 1761748504.54243 0
   "C:/Users/giova/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1731866597 122199 f0a029dcadf437d1491ad2875c164ac4 ""
   "C:/Users/giova/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730048657 24225047 22c0cfe9e657f8487c5195db7e977911 ""
   "C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -200,16 +200,16 @@
   "Illustrations/primeira-fase.png" 1761662083 2159353 8cd9975f5ff6b975ecbf099a022ac11b ""
   "Illustrations/segunda-fase.png" 1761662083 2065822 9d5f1f86a65f75dbbda16106b202704b ""
   "Illustrations/terceira-fase.png" 1761662083 2501281 a0e8436602605dfd43ca4dcf84f7a0c6 ""
-  "Topicos/estadodaarte.tex" 1761662083 4120 e5f186cecdfdf6f8c2aae3426afec053 ""
-  "Topicos/introducao.tex" 1761662083 6340 6c0ab8e998ae00e80d439809bb2c76e7 ""
-  "Topicos/metodologia.tex" 1761747783 21598 951bdeb29a55a565a808a44a6da7d40d ""
+  "Topicos/estadodaarte.tex" 1761748482 4111 bc1d79c14a93b4d63560e7cbd036e035 ""
+  "Topicos/introducao.tex" 1761748443 6331 6a4eb5871e21554ca3ccd019c420e8bf ""
+  "Topicos/metodologia.tex" 1761748381 21472 0ce002a75800530fbc02e809ce76f258 ""
   "Topicos/objetivo.tex" 1761662083 815 ebdc86cbfbd0aaf2e9a74c6c89d50ac1 ""
   "c:/Users/giova/OneDrive/Área de Trabalho/ArtigoLatex/f299-template-pi-paper/fatec-template.tex" 1761746401 5615 476f58b4bf7b92bc5b2f5445bbb794c6 ""
   "fatec-article.sty" 1761662083 46706 89cb42f747460219c6634986dfb8de6e ""
-  "fatec-template.aux" 1761747975 7392 7cdb7e1b5e1e1a0373066df3b0c0c993 "pdflatex"
+  "fatec-template.aux" 1761748503 7392 7cdb7e1b5e1e1a0373066df3b0c0c993 "pdflatex"
   "fatec-template.bbl" 1761745195 23904 cc958a5e9be9266db6f5db747f593204 "biber fatec-template"
-  "fatec-template.out" 1761747976 236 7d6221a2ac2d34aef2ad834ded4d0702 "pdflatex"
-  "fatec-template.run.xml" 1761747976 2617 4d46f5d56bcd78c60e0607a558d03956 "pdflatex"
+  "fatec-template.out" 1761748504 236 7d6221a2ac2d34aef2ad834ded4d0702 "pdflatex"
+  "fatec-template.run.xml" 1761748504 2617 4d46f5d56bcd78c60e0607a558d03956 "pdflatex"
   "fatec-template.tex" 1761746401 5615 476f58b4bf7b92bc5b2f5445bbb794c6 ""
   (generated)
   "fatec-template.aux"
