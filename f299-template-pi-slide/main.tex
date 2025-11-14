@@ -62,10 +62,6 @@
 % -------------------------------------------------
 
 \section{Pitch}
-\begin{frame}{Pitch}
-\justifying
-Pitch
-\end{frame}
 
 \section{Problematização}
 \begin{frame}{Problematização}
@@ -79,6 +75,18 @@ Pitch
 \end{frame}
 
 \section{Estado da Arte}
+\begin{frame}{Estado da Arte}
+\justifying
+    \centering
+    \includegraphics[width=\textwidth]{figuras/nasc.png}
+    
+    \vspace{0.4cm}
+    \textbf{Nascimento e Menezes (2020)}\\
+    {\small
+    A relação entre a prática regular de videogames e atenção sustentada
+    }
+\end{frame}
+
 \begin{frame}{Estado da Arte}
 \justifying
 
@@ -118,67 +126,175 @@ Pitch
 \begin{frame}{Objetivo}
 \justifying
 \begin{enumerate}
-  \item Integrar o TDC a um jogo digital com tarefas que
-  simulam desafios atencionais.
-  \item  Aplicar técnicas de \textit{eye tracking} em tempo real para registrar padrões de
-  atenção durante a execução das tarefas.
-  \item Processar automaticamente os dados coletados e compará-los com parâmetros
-  normativos para gerar feedback ao usuário.
-  \item Promover uma solução acessível, autônoma e alinhada ao ODS 3 da ONU, que amplie
-  o acesso à triagem inicial de TDA.
+  \item Integrar eleentos do TDC em tarefas em formato de jogo.
+  \item Coletar métricas de atenção e comportamento visual em tempo real.
+  \item Comparar automaticamente os dados com parâmetros de referência.
+  \item Gerar feedback imediato ao usuário.
+  \item Oferecer uma solução prática e acessível para triagem de TDA.
 \end{enumerate}
 \end{frame}
 
 \section{Metodologia}
 
 % SLIDE 1
-\begin{frame}{Metodologia — Parte 1}
+\begin{frame}{Metodologia — Metodologia do Jogo}
 \justifying
 
 \begin{itemize}
-    \item Adaptação do Teste de Desempenho Contínuo (TDC) para um jogo digital.
-    \item Estrutura em três fases, com dificuldade progressiva.
-    \item Coleta simultânea do desempenho (acertos, erros, tempo de resposta).
-    \item Rastreamento ocular em tempo real durante todo o teste.
-    \item Registro de padrões de foco e dispersão visual.
+    \item Três fases com músicas progressivamente mais agitadas.
+    \item Adaptação de métricas do TDC tradicional.
+    \item Métricas coletadas:
+    \begin{itemize}
+        \item Acertos
+        \item Erros por omissão
+        \item Erros por comissão
+        \item Tempo de resposta
+    \end{itemize}
+    \item Variabilidade temporal das respostas
+    \item Dois modos de jogo: \textbf{Normal} e \textbf{Treinamento}
     % TODO: adicionar figura ilustrativa do jogo
 \end{itemize}
 
 \end{frame}
 
 % SLIDE 2
-\begin{frame}{Metodologia — Parte 2}
+\begin{frame}{Metodologia — Funcionamento das Fases}
 \justifying
 
-\begin{itemize}
-    \item Fases avaliam diferentes tipos de atenção:
-    \begin{itemize}
-        \item Sustentada
-        \item Seletiva
-        \item Alternada
-        \item Dividida
-    \end{itemize}
-    \item Inserção de estímulos distratores visuais e sonoros.
-    \item Ao final de cada fase, o sistema exibe o desempenho.
-    \item No fim do teste, o sistema gera um indicador preliminar de atenção.
-    % TODO: adicionar figura ilustrativa do jogo
-\end{itemize}
+\begin{columns}[T,onlytextwidth]
+
+    %---------------------------------------
+    \begin{column}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figuras/primeira-fase.png}
+        
+        \vspace{0.4cm}
+
+        \textbf{Fase 1 - Fixação visual}
+        \begin{itemize}
+            \item Olhar 5 estrelas por 5s cada.
+            \item Computa acerto, omissão e comissão.
+        \end{itemize}
+    \end{column}
+
+    %---------------------------------------
+    \begin{column}{0.04\textwidth}
+        \rule{0.5pt}{0.75\textheight}
+    \end{column}
+
+    %---------------------------------------
+    \begin{column}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figuras/segunda-fase.png}
+
+        \vspace{0.4cm}
+
+        \textbf{Fase 2 - Atenção dividida}
+        \begin{itemize}
+            \item 2 rodadas de 15s com objetos transitando.
+            \item Criança identifica planetas via botões IoT.
+            \item Acertos e erros registrados.
+        \end{itemize}
+    \end{column}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Metodologia — Funcionamento das Fases}
+\justifying
+
+\begin{columns}[T,onlytextwidth]
+
+    %---------------------------------------
+    \begin{column}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figuras/terceira-fase.png}
+        
+        \vspace{0.4cm}
+
+        \textbf{Fase 3 - Alternância de foco}
+        \begin{itemize}
+            \item Alternar olhar entre dois alvos que ligam/desligam.
+            \item Avalia rapidez na troca de foco.
+        \end{itemize}
+    \end{column}
+
+    %---------------------------------------
+    \begin{column}{0.04\textwidth}
+        \rule{0.5pt}{0.75\textheight}
+    \end{column}
+
+    %---------------------------------------
+    \begin{column}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figuras/fim-geral.png}
+
+        \vspace{0.4cm}
+
+        \textbf{Resultados da IA}
+        \begin{itemize}
+            \item Gera pré-diagnóstico: acima/dentro/abaixo do esperado.
+            \item Modo treinamento alimenta o módulo de IA.
+        \end{itemize}
+    \end{column}
+
+\end{columns}
 
 \end{frame}
 
 \section{Apresentação prática}
-\begin{frame}{Apresentação prática}
-\justifying
-Mistura de etapas, ferramentas e resultados.  
-Falta de clareza sobre o fluxo de desenvolvimento, separação entre metodologia de pesquisa e de implementação, e presença de trechos do modelo sem conteúdo autoral.
-\end{frame}
 
 \section{Resultados}
 \begin{frame}{Resultados}
 \justifying
-Figuras muito pequenas ou sem legenda.  
-Ausência de fluxogramas obrigatórios.  
-Tabelas e seções de exemplo do modelo não substituídas adequadamente.
+\centering
+
+\vspace{0.5cm}
+{\Large\textbf{Resultados Parciais}}
+
+\begin{itemize}
+    \item Sistema de \textbf{eye tracking funcional}.
+    \item \textbf{Front-end do jogo concluído} e operando as primeiras fases.
+    \item Terceira fase \textbf{em desenvolvimento}.
+\end{itemize}
+
+\centering
+
+\vspace{0.5cm}
+{\Large\textbf{Próximos Passos}}
+
+\begin{itemize}
+    \item Refinar a \textbf{precisão do eye tracking funcional}.
+    \item Finalizar a \textbf{implementação da Fase 3}.
+    \item Iniciar \textbf{testes da primeira versão} do jogo.
+    \item Melhoria contínua do sistema e criação da IA.
+\end{itemize}
+
+\end{frame}
+
+\section{Conclusão}
+
+\begin{frame}{Conclusão}
+\justifying
+
+\vspace{0.5cm}
+{\Large\textbf{Desafios identificados}}
+
+\begin{itemize}
+    \item Integração do eye tracking com a mecânica do jogo.
+    \item Testes em diferentes condições ambientais.
+    \item Validação da eficiência do sistema.
+\end{itemize}
+
+\vspace{0.5cm}
+{\Large\textbf{Potencial do projeto}}
+
+\begin{itemize}
+    \item Grande capacidade de evolução com avanços em visão computacional.
+    \item Possibilidade de tornar a triagem de TDA mais acessível e intuitiva.
+\end{itemize}
+
 \end{frame}
 
 \end{document}
