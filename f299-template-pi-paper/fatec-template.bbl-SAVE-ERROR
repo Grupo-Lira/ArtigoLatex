@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
-    \entry{WebGazerDoc}{misc}{}{}
+  \datalist[entry]{nty/global//global/global}
+    \entry{WebGazerDoc}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=8ce7bd95ab5793fc0c398775cddbe88c}{%
            family={{Brown HCI Group}},
@@ -27,12 +27,10 @@
       }
       \strng{namehash}{8ce7bd95ab5793fc0c398775cddbe88c}
       \strng{fullhash}{8ce7bd95ab5793fc0c398775cddbe88c}
-      \strng{fullhashraw}{8ce7bd95ab5793fc0c398775cddbe88c}
       \strng{bibnamehash}{8ce7bd95ab5793fc0c398775cddbe88c}
       \strng{authorbibnamehash}{8ce7bd95ab5793fc0c398775cddbe88c}
       \strng{authornamehash}{8ce7bd95ab5793fc0c398775cddbe88c}
       \strng{authorfullhash}{8ce7bd95ab5793fc0c398775cddbe88c}
-      \strng{authorfullhashraw}{8ce7bd95ab5793fc0c398775cddbe88c}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -49,7 +47,7 @@
       \verb https://deepwiki.com/brownhci/WebGazer/3.2-gaze-prediction
       \endverb
     \endentry
-    \entry{sep-chinese-room}{incollection}{}{}
+    \entry{sep-chinese-room}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3937f16a64a3c9674d9b0e6d0e2e0bce}{%
            family={Cole},
@@ -75,16 +73,13 @@
       }
       \strng{namehash}{3937f16a64a3c9674d9b0e6d0e2e0bce}
       \strng{fullhash}{3937f16a64a3c9674d9b0e6d0e2e0bce}
-      \strng{fullhashraw}{3937f16a64a3c9674d9b0e6d0e2e0bce}
       \strng{bibnamehash}{3937f16a64a3c9674d9b0e6d0e2e0bce}
       \strng{authorbibnamehash}{3937f16a64a3c9674d9b0e6d0e2e0bce}
       \strng{authornamehash}{3937f16a64a3c9674d9b0e6d0e2e0bce}
       \strng{authorfullhash}{3937f16a64a3c9674d9b0e6d0e2e0bce}
-      \strng{authorfullhashraw}{3937f16a64a3c9674d9b0e6d0e2e0bce}
       \strng{editorbibnamehash}{ab8d8ffb26096a29ec1c38ef9e4911c6}
       \strng{editornamehash}{ab8d8ffb26096a29ec1c38ef9e4911c6}
       \strng{editorfullhash}{ab8d8ffb26096a29ec1c38ef9e4911c6}
-      \strng{editorfullhashraw}{ab8d8ffb26096a29ec1c38ef9e4911c6}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -97,7 +92,7 @@
       \field{title}{{The Chinese Room Argument}}
       \field{year}{2024}
     \endentry
-    \entry{CULLUM1998303}{incollection}{}{}
+    \entry{CULLUM1998303}{incollection}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f1d95cb74f40e32861f49b1c5b6e2778}{%
            family={Cullum},
@@ -126,16 +121,13 @@
       }
       \strng{namehash}{f1d95cb74f40e32861f49b1c5b6e2778}
       \strng{fullhash}{f1d95cb74f40e32861f49b1c5b6e2778}
-      \strng{fullhashraw}{f1d95cb74f40e32861f49b1c5b6e2778}
       \strng{bibnamehash}{f1d95cb74f40e32861f49b1c5b6e2778}
       \strng{authorbibnamehash}{f1d95cb74f40e32861f49b1c5b6e2778}
       \strng{authornamehash}{f1d95cb74f40e32861f49b1c5b6e2778}
       \strng{authorfullhash}{f1d95cb74f40e32861f49b1c5b6e2778}
-      \strng{authorfullhashraw}{f1d95cb74f40e32861f49b1c5b6e2778}
       \strng{editorbibnamehash}{25d036f5299badc10d3782f3f137869c}
       \strng{editornamehash}{25d036f5299badc10d3782f3f137869c}
       \strng{editorfullhash}{25d036f5299badc10d3782f3f137869c}
-      \strng{editorfullhashraw}{25d036f5299badc10d3782f3f137869c}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -158,7 +150,7 @@
       \verb https://www.sciencedirect.com/science/article/pii/B0080427073002273
       \endverb
     \endentry
-    \entry{Elbaum2020}{article}{}{}
+    \entry{Elbaum2020}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=1edbe547e1e6951a0226205513b87d4f}{%
            family={Elbaum},
@@ -187,12 +179,10 @@
       }
       \strng{namehash}{9b1a2903de9ea292d35067ca96a68c47}
       \strng{fullhash}{c165770828acefba079a823df23c2303}
-      \strng{fullhashraw}{c165770828acefba079a823df23c2303}
       \strng{bibnamehash}{9b1a2903de9ea292d35067ca96a68c47}
       \strng{authorbibnamehash}{9b1a2903de9ea292d35067ca96a68c47}
       \strng{authornamehash}{9b1a2903de9ea292d35067ca96a68c47}
       \strng{authorfullhash}{c165770828acefba079a823df23c2303}
-      \strng{authorfullhashraw}{c165770828acefba079a823df23c2303}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{extradatescope}{labelyear}
@@ -215,7 +205,7 @@
       \verb https://www.mdpi.com/1424-8220/20/21/6386
       \endverb
     \endentry
-    \entry{IEEE}{misc}{}{}
+    \entry{IEEE}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=472abfae8142fdb6f39d081303e8af85}{%
            family={{IEEE}},
@@ -223,12 +213,10 @@
       }
       \strng{namehash}{472abfae8142fdb6f39d081303e8af85}
       \strng{fullhash}{472abfae8142fdb6f39d081303e8af85}
-      \strng{fullhashraw}{472abfae8142fdb6f39d081303e8af85}
       \strng{bibnamehash}{472abfae8142fdb6f39d081303e8af85}
       \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
       \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
       \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
-      \strng{authorfullhashraw}{472abfae8142fdb6f39d081303e8af85}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{extradatescope}{labelyear}
@@ -244,7 +232,7 @@
       \verb https://iot.ieee.org/definition.html
       \endverb
     \endentry
-    \entry{Nascimento2020}{article}{}{}
+    \entry{Nascimento2020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=3a5fd811852f0a5738c59607521e65ed}{%
            family={Nascimento},
@@ -261,12 +249,10 @@
       }
       \strng{namehash}{dbdf5712eb8c05971a18f5bbc8cb4702}
       \strng{fullhash}{dbdf5712eb8c05971a18f5bbc8cb4702}
-      \strng{fullhashraw}{dbdf5712eb8c05971a18f5bbc8cb4702}
       \strng{bibnamehash}{dbdf5712eb8c05971a18f5bbc8cb4702}
       \strng{authorbibnamehash}{dbdf5712eb8c05971a18f5bbc8cb4702}
       \strng{authornamehash}{dbdf5712eb8c05971a18f5bbc8cb4702}
       \strng{authorfullhash}{dbdf5712eb8c05971a18f5bbc8cb4702}
-      \strng{authorfullhashraw}{dbdf5712eb8c05971a18f5bbc8cb4702}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{extradatescope}{labelyear}
@@ -288,7 +274,7 @@
       \verb https://revista.cienciasecognicao.org/index.php/cec/article/view/1661
       \endverb
     \endentry
-    \entry{unitednations2015agenda2030}{misc}{}{}
+    \entry{unitednations2015agenda2030}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2d661e9167bd3a268ea03a3ee152926c}{%
            family={Nations},
@@ -305,12 +291,10 @@
       }
       \strng{namehash}{2d661e9167bd3a268ea03a3ee152926c}
       \strng{fullhash}{2d661e9167bd3a268ea03a3ee152926c}
-      \strng{fullhashraw}{2d661e9167bd3a268ea03a3ee152926c}
       \strng{bibnamehash}{2d661e9167bd3a268ea03a3ee152926c}
       \strng{authorbibnamehash}{2d661e9167bd3a268ea03a3ee152926c}
       \strng{authornamehash}{2d661e9167bd3a268ea03a3ee152926c}
       \strng{authorfullhash}{2d661e9167bd3a268ea03a3ee152926c}
-      \strng{authorfullhashraw}{2d661e9167bd3a268ea03a3ee152926c}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{extradatescope}{labelyear}
@@ -327,7 +311,7 @@
       \verb https://sdgs.un.org/sites/default/files/publications/21252030%20Agenda%20for%20Sustainable%20Development%20web.pdf
       \endverb
     \endentry
-    \entry{papoutsaki2016webgazer}{inproceedings}{}{}
+    \entry{papoutsaki2016webgazer}{inproceedings}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=bbe2f09b26238be11430f093f18b66ec}{%
            family={Papoutsaki},
@@ -365,12 +349,10 @@
       }
       \strng{namehash}{ab3a389ff6b9cf1679f9e9ef43654048}
       \strng{fullhash}{abf8b1c0ff961cf9c111370eb7044ce7}
-      \strng{fullhashraw}{abf8b1c0ff961cf9c111370eb7044ce7}
       \strng{bibnamehash}{ab3a389ff6b9cf1679f9e9ef43654048}
       \strng{authorbibnamehash}{ab3a389ff6b9cf1679f9e9ef43654048}
       \strng{authornamehash}{ab3a389ff6b9cf1679f9e9ef43654048}
       \strng{authorfullhash}{abf8b1c0ff961cf9c111370eb7044ce7}
-      \strng{authorfullhashraw}{abf8b1c0ff961cf9c111370eb7044ce7}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -388,7 +370,7 @@
       \verb https://webgazer.cs.brown.edu/
       \endverb
     \endentry
-    \entry{BVS2014}{misc}{}{}
+    \entry{BVS2014}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=80804373b16dba3b00425c2edc9dd8ff}{%
            family={Saúde},
@@ -402,12 +384,10 @@
       }
       \strng{namehash}{80804373b16dba3b00425c2edc9dd8ff}
       \strng{fullhash}{80804373b16dba3b00425c2edc9dd8ff}
-      \strng{fullhashraw}{80804373b16dba3b00425c2edc9dd8ff}
       \strng{bibnamehash}{80804373b16dba3b00425c2edc9dd8ff}
       \strng{authorbibnamehash}{80804373b16dba3b00425c2edc9dd8ff}
       \strng{authornamehash}{80804373b16dba3b00425c2edc9dd8ff}
       \strng{authorfullhash}{80804373b16dba3b00425c2edc9dd8ff}
-      \strng{authorfullhashraw}{80804373b16dba3b00425c2edc9dd8ff}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -423,7 +403,7 @@
       \verb https://bvsms.saude.gov.br/transtorno-do-deficit-de-atencao-com-hiperatividade-tdah/
       \endverb
     \endentry
-    \entry{Wiebe2024}{article}{}{}
+    \entry{Wiebe2024}{article}{}
       \name{author}{9}{}{%
         {{un=0,uniquepart=base,hash=72e5f8c4d982cb5ced26ae607c0c8aa6}{%
            family={Wiebe},
@@ -482,12 +462,10 @@
       }
       \strng{namehash}{76396b3b7e1aa24b7d8bc99c0ef133f2}
       \strng{fullhash}{97941de3efc4b06dd5381c340ede424c}
-      \strng{fullhashraw}{97941de3efc4b06dd5381c340ede424c}
       \strng{bibnamehash}{76396b3b7e1aa24b7d8bc99c0ef133f2}
       \strng{authorbibnamehash}{76396b3b7e1aa24b7d8bc99c0ef133f2}
       \strng{authornamehash}{76396b3b7e1aa24b7d8bc99c0ef133f2}
       \strng{authorfullhash}{97941de3efc4b06dd5381c340ede424c}
-      \strng{authorfullhashraw}{97941de3efc4b06dd5381c340ede424c}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{extradatescope}{labelyear}
@@ -512,7 +490,7 @@
       \verb https://doi.org/10.1038/s41398-024-03217-y
       \endverb
     \endentry
-    \entry{Lim2024}{article}{}{}
+    \entry{Lim2024}{article}{}
       \name{author}{10}{}{%
         {{un=0,uniquepart=base,hash=1b8742e9f6f4a859a0b840ed65b7d70b}{%
            family={Yoo},
@@ -577,12 +555,10 @@
       }
       \strng{namehash}{a45076efe4d79312a21030a7554f4ecb}
       \strng{fullhash}{d89599fe521c7391ec3c23e2c02f027b}
-      \strng{fullhashraw}{d89599fe521c7391ec3c23e2c02f027b}
       \strng{bibnamehash}{a45076efe4d79312a21030a7554f4ecb}
       \strng{authorbibnamehash}{a45076efe4d79312a21030a7554f4ecb}
       \strng{authornamehash}{a45076efe4d79312a21030a7554f4ecb}
       \strng{authorfullhash}{d89599fe521c7391ec3c23e2c02f027b}
-      \strng{authorfullhashraw}{d89599fe521c7391ec3c23e2c02f027b}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
       \field{extradatescope}{labelyear}
