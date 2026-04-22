@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.27)  22 APR 2026 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.27)  22 APR 2026 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1112,4 +1112,319 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-*
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package newfloat Info: `float' package detected.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'brazilian' -> 'brazilian-abnt'...
+Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
+(C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
+File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'brazil' -> 'brazil-abnt'...
+Package biblatex Info: ... file 'brazil-abnt.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazil-abnt.lbx
+File: brazil-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'brazilian-abnt'...
+Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
+File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'brazil'...
+Package biblatex Info: ... file 'brazil.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazil.lbx
+File: brazil.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)))))
+Package biblatex Info: Trying to load language 'english' -> 'english-abnt'...
+Package biblatex Info: ... file 'english-abnt.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\english-abnt.lbx
+File: english-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `fatec-template.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'fatec-template.bbl' found.
+ (fatec-template.bbl)
+Package biblatex Info: Reference section=0 on input line 80.
+Package biblatex Info: Reference segment=0 on input line 80.
+Package hyperref Info: Link coloring ON on input line 80.
+ (fatec-template.out) (fatec-template.out)
+\@outlinefile=\write4
+\openout4 = `fatec-template.out'.
+
+Package cleveref Info: loaded `brazilian' language definitions on input line 80.
+Package cleveref Info: loaded `brazilian' language definitions on input line 80.
+Package cleveref Info: loaded `english' language definitions on input line 80.
+Package cleveref Info: loaded `brazilian' language definitions on input line 80.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 80.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd
+File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
+)
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 12.0pt on input line 80.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `minntx' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 8.8pt on input line 80.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 6.6pt on input line 80.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 12.0pt on input line 80.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.8pt on input line 80.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.6pt on input line 80.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 12.0pt on input line 80.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.8pt on input line 80.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.6pt on input line 80.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 12.0pt on input line 80.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.8pt on input line 80.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.6pt on input line 80.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 80.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
+File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 12.0pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.8pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.6pt on input line 80.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 80.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
+File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 12.0pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.8pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.6pt on input line 80.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 80.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 12.0pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.8pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.6pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 12.0pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.8pt on input line 80.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.6pt on input line 80.
+Package cleveref Info: loaded `brazilian' language definitions on input line 80.
+Package cleveref Info: loaded `brazilian' language definitions on input line 80.
+Package cleveref Info: loaded `english' language definitions on input line 80.
+Package cleveref Info: loaded `brazilian' language definitions on input line 80.
+ (Topicos/introducao.tex
+<./Illustrations/fatec.jpg, id=13, 401.5pt x 401.5pt>
+File: ./Illustrations/fatec.jpg Graphic file (type jpg)
+<use ./Illustrations/fatec.jpg>
+Package pdftex.def Info: ./Illustrations/fatec.jpg  used on input line 3.
+(pdftex.def)             Requested size: 99.58444pt x 99.58464pt.
+ [1{C:/Users/giova/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}
+
+ <./Illustrations/fatec.jpg>]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 9.
+ [2]) (Topicos/objetivo.tex
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 8.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
+File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) (Topicos/estadodaarte.tex [3{C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]) (Topicos/metodologia.tex [4]
+<./Illustrations/primeira-fase.png, id=78, 1927.2pt x 1043.9pt>
+File: ./Illustrations/primeira-fase.png Graphic file (type png)
+<use ./Illustrations/primeira-fase.png>
+Package pdftex.def Info: ./Illustrations/primeira-fase.png  used on input line 17.
+(pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
+ [5]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 26.
+ (C:\Users\giova\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<./Illustrations/fim-fase1-fase3.png, id=85, 1927.2pt x 1043.9pt>
+File: ./Illustrations/fim-fase1-fase3.png Graphic file (type png)
+<use ./Illustrations/fim-fase1-fase3.png>
+Package pdftex.def Info: ./Illustrations/fim-fase1-fase3.png  used on input line 32.
+(pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
+ [6 <./Illustrations/primeira-fase.png>]
+<./Illustrations/segunda-fase.png, id=94, 1927.2pt x 1043.9pt>
+File: ./Illustrations/segunda-fase.png Graphic file (type png)
+<use ./Illustrations/segunda-fase.png>
+Package pdftex.def Info: ./Illustrations/segunda-fase.png  used on input line 40.
+(pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
+ [7 <./Illustrations/fim-fase1-fase3.png> <./Illustrations/segunda-fase.png>]
+<./Illustrations/perguntas-segunda-fase.png, id=103, 1927.2pt x 1043.9pt>
+File: ./Illustrations/perguntas-segunda-fase.png Graphic file (type png)
+<use ./Illustrations/perguntas-segunda-fase.png>
+Package pdftex.def Info: ./Illustrations/perguntas-segunda-fase.png  used on input line 52.
+(pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
+ [8]
+<./Illustrations/fim-segunda-fase.png, id=108, 1927.2pt x 1043.9pt>
+File: ./Illustrations/fim-segunda-fase.png Graphic file (type png)
+<use ./Illustrations/fim-segunda-fase.png>
+Package pdftex.def Info: ./Illustrations/fim-segunda-fase.png  used on input line 60.
+(pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
+ [9 <./Illustrations/perguntas-segunda-fase.png> <./Illustrations/fim-segunda-fase.png>]
+<./Illustrations/terceira-fase.png, id=118, 1927.2pt x 1043.9pt>
+File: ./Illustrations/terceira-fase.png Graphic file (type png)
+<use ./Illustrations/terceira-fase.png>
+Package pdftex.def Info: ./Illustrations/terceira-fase.png  used on input line 72.
+(pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
+ [10 <./Illustrations/terceira-fase.png>]
+<./Illustrations/fim-geral.png, id=126, 1927.2pt x 1043.9pt>
+File: ./Illustrations/fim-geral.png Graphic file (type png)
+<use ./Illustrations/fim-geral.png>
+Package pdftex.def Info: ./Illustrations/fim-geral.png  used on input line 84.
+(pdftex.def)             Requested size: 483.69687pt x 261.99379pt.
+<./Illustrations/relatorio.png, id=128, 1927.2pt x 1209.51875pt>
+File: ./Illustrations/relatorio.png Graphic file (type png)
+<use ./Illustrations/relatorio.png>
+Package pdftex.def Info: ./Illustrations/relatorio.png  used on input line 94.
+(pdftex.def)             Requested size: 483.69687pt x 303.56012pt.
+ [11 <./Illustrations/fim-geral.png>] [12 <./Illustrations/relatorio.png>]
+<./Illustrations/fluxograma.png, id=142, 857.30287pt x 511.76193pt>
+File: ./Illustrations/fluxograma.png Graphic file (type png)
+<use ./Illustrations/fluxograma.png>
+Package pdftex.def Info: ./Illustrations/fluxograma.png  used on input line 117.
+(pdftex.def)             Requested size: 483.69687pt x 288.73996pt.
+ [13 <./Illustrations/fluxograma.png>]) (Topicos/conclusao.tex)
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+ [14]
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+ [15]
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+Package cleveref Info: loaded `brazilian' language definitions on input line 117.
+ [16] (fatec-template.aux
+Package cleveref Info: loaded `brazilian' language definitions on input line 13.
+Package cleveref Info: loaded `brazilian' language definitions on input line 14.
+Package cleveref Info: loaded `brazilian' language definitions on input line 15.
+Package cleveref Info: loaded `english' language definitions on input line 16.
+Package cleveref Info: loaded `brazilian' language definitions on input line 17.
+Package cleveref Info: loaded `brazilian' language definitions on input line 18.
+Package cleveref Info: loaded `brazilian' language definitions on input line 19.
+Package cleveref Info: loaded `english' language definitions on input line 20.
+Package cleveref Info: loaded `brazilian' language definitions on input line 21.
+Package cleveref Info: loaded `brazilian' language definitions on input line 127.
+Package cleveref Info: loaded `brazilian' language definitions on input line 128.
+Package cleveref Info: loaded `brazilian' language definitions on input line 131.
+Package cleveref Info: loaded `brazilian' language definitions on input line 132.
+Package cleveref Info: loaded `brazilian' language definitions on input line 134.
+Package cleveref Info: loaded `brazilian' language definitions on input line 135.
+Package cleveref Info: loaded `brazilian' language definitions on input line 137.
+Package cleveref Info: loaded `brazilian' language definitions on input line 138.
+Package cleveref Info: loaded `brazilian' language definitions on input line 140.
+Package cleveref Info: loaded `brazilian' language definitions on input line 141.
+Package cleveref Info: loaded `brazilian' language definitions on input line 143.
+Package cleveref Info: loaded `brazilian' language definitions on input line 144.
+Package cleveref Info: loaded `brazilian' language definitions on input line 146.
+Package cleveref Info: loaded `brazilian' language definitions on input line 147.
+Package cleveref Info: loaded `brazilian' language definitions on input line 149.
+Package cleveref Info: loaded `brazilian' language definitions on input line 150.
+Package cleveref Info: loaded `brazilian' language definitions on input line 152.
+Package cleveref Info: loaded `brazilian' language definitions on input line 153.
+Package cleveref Info: loaded `brazilian' language definitions on input line 155.
+Package cleveref Info: loaded `brazilian' language definitions on input line 156.
+)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+Package rerunfilecheck Info: File `fatec-template.out' has not changed.
+(rerunfilecheck)             Checksum: BABF180978844933C9F6F3941155E10F;236.
+Package logreq Info: Writing requests to 'fatec-template.run.xml'.
+\openout1 = `fatec-template.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 34230 strings out of 474486
+ 620346 string characters out of 5743754
+ 1947542 words of memory out of 5000000
+ 55821 multiletter control sequences out of 15000+600000
+ 616362 words of font info for 168 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 87i,20n,131p,1930b,4566s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss9.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/giova/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb>
+Output written on fatec-template.pdf (16 pages, 12360170 bytes).
+PDF statistics:
+ 227 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 29763 words of extra memory for PDF output out of 29859 (max. 10000000)
+
