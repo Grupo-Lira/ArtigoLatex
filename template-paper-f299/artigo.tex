@@ -101,10 +101,10 @@ desempenho de crianças em diversas esferas da vida, como estudos e relações i
 envolve avaliações clínicas e testes padronizados, os quais nem sempre estão disponíveis de forma acessível ou
 apresentam dados objetivos suficientes para um rastreio inicial eficaz. Este estudo propõe uma abordagem tecnológica
 que integra uma plataforma digital gamificada, baseada no Teste de Desempenho Contínuo (TDC), com técnicas de
-rastreamento ocular em tempo real. A proposta tem como objetivo identificar possíveis indícios de TDA em crianças
+rastreamento ocular em tempo real. A proposta tem como objetivo identificar possíveis indícios de TDAH em crianças
 de 10 a 12 anos por meio da análise de desempenho atencional durante a execução de tarefas gamificadas. O sistema
 registra dados como acertos, tempo de reação, erros de omissão e comissão, variabilidade nas respostas e padrões de
-fixação ocular, os quais são processados automaticamente. Com base na comparação com bases de dados normativas,
+fixação ocular, os quais são processados automaticamente. Com base na comparação entre os dados coletados e o banco de dados,
 o sistema fornece um feedback interpretativo ao usuário, podendo contribuir como ferramenta complementar de
 triagem inicial. A acessibilidade da plataforma, que roda diretamente no navegador, e seu caráter lúdico e autônomo
 tornam a solução promissora para ampliar o acesso ao rastreamento precoce de indícios do transtorno. A proposta
@@ -150,13 +150,13 @@ data-driven healthcare system
 % TODO: explicar o porquê de ser destinado a profissionais testarem em crianças
 A Organização das Nações Unidas (ONU) estabelece, por meio da Agenda 2030, metas para promover o desenvolvimento sustentável e o bem-estar global. Entre os 17 Objetivos de Desenvolvimento Sustentável (ODS), o terceiro busca garantir saúde de qualidade e promover o bem-estar para todos. Nesse contexto, este trabalho visa contribuir para essa meta ao propor uma solução tecnológica voltada à identificação de indícios do Transtorno de Déficit de Atenção (TDA) em crianças entre 10 e 12 anos.\cite{UN2030}
 
-O TDA é uma condição neurobiológica de causas genéticas, que afeta milhões de pessoas em todo o mundo. É caracterizada por sintomas de
+O TDAH é uma condição neurobiológica de causas genéticas, que afeta milhões de pessoas em todo o mundo. É caracterizada por sintomas de
 desatenção, impulsividade, e, em alguns casos, hiperatividade, afetando significativamente o
 desempenho acadêmico, profissional e social dos afetados. Embora o diagnóstico clínico do
-TDA seja baseado tradicionalmente em entrevistas e questionários subjetivos, avanços
+TDAH seja baseado tradicionalmente em entrevistas e questionários subjetivos, avanços
 tecnológicos têm permitido o uso de ferramentas mais robustas e quantitativas para apoiar
 esse processo. \cite{BVS2014}
-Entre essas ferramentas, destaca-se o \textit{eye tracking} (do português, rastramento ocular), esta é uma técnica
+Entre essas ferramentas, destaca-se o \textit{eye tracking} (do português, rastreamento ocular), trata-se de uma técnica
 que consiste em usar o posicionamento dos olhos de uma pessoa para obter informações
 sobre onde ela está olhando. Isso pode ser feito usando luzes infravermelhas, que calculam
 exatamente onde a pessoa está olhando com base nas reflexões da luz na retina, ou por
@@ -174,7 +174,7 @@ Quando aplicada em um teste diagnóstico, a técnica permite acompanhar com
 precisão os movimentos dos olhos de um indivíduo durante a realização de tarefas
 específicas, fornecendo dados objetivos e detalhados sobre onde, por quanto tempo e em
 que sequência uma pessoa fixa seu olhar em determinados estímulos visuais. Estudos
-demonstram que pessoas com TDA apresentam menor tempo de fixação e padrão visual
+demonstram que pessoas com TDAH apresentam menor tempo de fixação e padrão visual
 mais disperso ao realizarem testes de desempenho, sugerindo dificuldade em manter a
 atenção sustentada e filtragem de estímulos irrelevantes \cite{Lim2024}.
 
@@ -200,7 +200,7 @@ clínicas mais embasadas. Assim, este estudo propõe o desenvolvimento de um sof
 \section{Objetivo}
 Desenvolver uma plataforma digital gamificada, acessível por navegador, que utiliza
 rastreamento ocular e métricas de desempenho atencional para auxiliar na triagem inicial de
-indícios do TDA em crianças de 10 a 12 anos.
+indícios do TDAH em crianças de 10 a 12 anos.
 
 \subsection*{OBJETIVOS ESPECÍFICOS} 
 
@@ -219,7 +219,7 @@ indícios do TDA em crianças de 10 a 12 anos.
 % Estado da Arte
 \section{Estado da Arte}
 
-O diagnóstico do TDA em adultos continua sendo
+O diagnóstico do TDAH em adultos continua sendo
 um desafio clínico significativo. Tradicionalmente, o processo diagnóstico baseia-se em
 entrevistas e testes clínicos, autorrelato e relatos de informantes, instrumentos que, embora
 úteis, podem ser afetados por viés retrospectivo, subjetividade do paciente, e simulação dos
@@ -232,7 +232,7 @@ entre a prática regular de videogames e o desempenho em atenção sustentada, a
 pelo \textit{Conners’ Continuous Performance Test II} (CPT II), uma versão amplamente utilizada do
 TDC. Embora não tenham encontrado diferenças de
 performance entre jogadores de videogames de ação, não ação e não jogadores, os autores
-identificaram o sexo como uma variável relevante, pois notara diferença entre tempo de
+identificaram o sexo como uma variável relevante, pois notaram diferença entre tempo de
 reação e número de erros. O estudo destaca a complexidade das interações entre fatores
 individuais e experiências digitais, sugerindo que a aplicação de jogos, mesmo quando
 classificados como serious games, precisam de cuidados na metodologia e no controle de
@@ -304,9 +304,9 @@ Finalmente, no pós-processamento, as predições de olhar bruto são submetidas
 
 TODO: ADD PARTE DE CLOUD
 
-A plataforma foi desenvolvida com tecnologias web, possibilitando acesso remoto e execução direta em \textit{browsers}, preferencialmente com a \textit{webcam Logitech Brio Cam HS}, por apresentar melhor qualidade na captura do olhar. Optou-se pela plataforma \textit{web} considerando-se múltiplos fatores: a estabilidade do equipamento durante a calibração e execução das fases do jogo; o contexto de uso destinado a crianças, para o qual um dispositivo móvel poderia resultar em desatenção ou menor comprometimento, ao ser confundido com uma atividade comum de entretenimento; a temática espacial com abundância de elementos visuais, que exigiria redução dimensional em telas móveis, prejudicando a disposição adequada dos elementos; e, finalmente, o contexto de aplicação por profissionais em ambientes de escritório, onde notebooks são mais disponíveis. O teste é executado em ambiente silencioso, sob supervisão de profissional responsável pela preparação do ambiente, criação do perfil da criança e orientação do procedimento, conforme as instruções disponibilizadas pela plataforma. 
+A plataforma foi desenvolvida com tecnologias web, possibilitando acesso remoto e execução direta em navegadores, preferencialmente com a \textit{webcam Logitech Brio Cam HS}, por apresentar melhor qualidade na captura do olhar. Optou-se pela plataforma \textit{web} considerando-se múltiplos fatores: a estabilidade do equipamento durante a calibração e execução das fases do jogo; o contexto de uso destinado a crianças, para o qual um dispositivo móvel poderia resultar em desatenção ou menor comprometimento, ao ser confundido com uma atividade comum de entretenimento; a temática espacial com abundância de elementos visuais, que exigiria redução dimensional em telas móveis, prejudicando a disposição adequada dos elementos; e, finalmente, o contexto de aplicação por profissionais em ambientes de escritório, onde notebooks são mais disponíveis. O teste é executado em ambiente silencioso, sob supervisão de profissional responsável pela preparação do ambiente, criação do perfil da criança e orientação do procedimento, conforme as instruções disponibilizadas pela plataforma. 
 
-O estudo é estruturado como um jogo digital de temática espacial guiado por rastreamento ocular, composto por três fases com níveis crescentes de dificuldade. O jogo será aplicado por profissionais da saúde, como psicólogos, para a triagem inicial de indícios de TDA em crianças entre 10 e 12 anos. A mecânica do jogo foi elaborada para simular os princípios do TDC, promovendo a exposição contínua a estímulos visuais por períodos prolongados e exigindo respostas rápidas e consistentes por parte do participante através do olhar, em consonância com paradigmas de avaliação de inibição de resposta e controle atencional em crianças \cite{HOYNIAK2019200}. Além disso, aplicou-se o princípio de avaliação de atenção sustentada proposto em \cite{sciencedirect_cpt}. Nele, a tarefa consiste na observação de estímulos sequenciais com respostas condicionadas a sinais-chave, dinâmica que foi devidamente adaptada e distribuída entre as três fases do sistema. Os dados de fixação visual coletados permitem identificar padrões de atenção ou desatenção, que são contrastados com nossa base de dados em cada etapa da atividade. Todas as fases do experimento são configuradas para potencializar a sobrecarga sensorial e dificultar a concentração do participante. Para tal, utilizam-se música de fundo, cuja intensidade e ritmo são ajustados conforme o nível de dificuldade, e a imposição de um tempo máximo definido, elementos que, em conjunto, intensificam o estresse cognitivo e a exigência da tarefa. O ambiente de teste é controlado, com supervisão profissional, o que garante a padronização das condições de aplicação e a segurança dos participantes. 
+O estudo é estruturado como um jogo digital de temática espacial guiado por rastreamento ocular, composto por três fases com níveis crescentes de dificuldade. O jogo será aplicado por profissionais da saúde, como psicólogos, para a triagem inicial de indícios de TDAH em crianças entre 10 e 12 anos. A mecânica do jogo foi elaborada para simular os princípios do TDC, promovendo a exposição contínua a estímulos visuais por períodos prolongados e exigindo respostas rápidas e consistentes por parte do participante através do olhar, em consonância com paradigmas de avaliação de inibição de resposta e controle atencional em crianças \cite{HOYNIAK2019200}. Além disso, aplicou-se o princípio de avaliação de atenção sustentada proposto em \cite{sciencedirect_cpt}. Nele, a tarefa consiste na observação de estímulos sequenciais com respostas condicionadas a sinais-chave, dinâmica que foi devidamente adaptada e distribuída entre as três fases do sistema. Os dados de fixação visual coletados permitem identificar padrões de atenção ou desatenção, que são contrastados com nossa base de dados em cada etapa da atividade. Todas as fases do experimento são configuradas para potencializar a sobrecarga sensorial e dificultar a concentração do participante. Para tal, utilizam-se música de fundo, cuja intensidade e ritmo são ajustados conforme o nível de dificuldade, e a imposição de um tempo máximo definido, elementos que, em conjunto, intensificam o estresse cognitivo e a exigência da tarefa. O ambiente de teste é controlado, com supervisão profissional, o que garante a padronização das condições de aplicação e a segurança dos participantes. 
 
 O profissional, já com cadastro e login previamente definidos na plataforma, assim como a criação do perfil do paciente que irá jogar, pode acessar o sistema. O participante é direcionado para a página de instruções, onde são apresentadas a sequência de como calibrar o olhar para poder prosseguir para o jogo. 
 
@@ -394,7 +394,7 @@ Em futuras iterações do projeto, planeja-se o aperfeiçoamento estético e erg
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
 
-Na terceira fase, a demanda cognitiva é intensificada pela necessidade de alternância rápida do foco visual entre diferentes regiões da tela. Nessa etapa, uma estrela surge de forma estática, exigindo resposta ocular imediata do participante. Simultaneamente, um segundo estímulo estático é apresentado (radar de uma aeronave), alternando entre os estados ligado e desligado em intervalos regulares. Quando esse estímulo é ativado (ascende), o participante deve manter o olhar fixo sobre ele até que se apague, o que permite avaliar a atenção dividida e o controle do direcionamento ocular. A duração desta fase é de 30 segundos. A trilha sonora atinge seu nível máximo de intensidade e agitação, contribuindo para aumentar a complexidade da tarefa. O desempenho do participante nesta fase é utilizado como indicador da agilidade atencional e da capacidade de redirecionamento e manutenção do foco visual diante de estímulos dinâmicos. Ao fim da terceira fase, métricas como número de acertos (fixação por 5 segundos), número de erros de omissão (demora de 10 segundos ou mais para iniciar a fixação) e erros de comissão (início da fixação antes de 10 segundos, sem manutenção do foco por 5 segundos) são calculados e apresentados ao participante, conforme ilustrado na Figura \ref{fig:fim-terceira-fase}.
+Na terceira fase, a demanda cognitiva é intensificada pela necessidade de alternância rápida do foco visual entre diferentes regiões da tela. Nessa etapa, uma estrela surge de forma estática, exigindo resposta ocular imediata do participante. Simultaneamente, um segundo estímulo estático é apresentado (radar de uma aeronave), alternando entre os estados ligado e desligado em intervalos regulares. Quando esse estímulo é ativado (acende), o participante deve manter o olhar fixo sobre ele até que se apague, o que permite avaliar a atenção dividida e o controle do direcionamento ocular. A duração desta fase é de 30 segundos. A trilha sonora atinge seu nível máximo de intensidade e agitação, contribuindo para aumentar a complexidade da tarefa. O desempenho do participante nesta fase é utilizado como indicador da agilidade atencional e da capacidade de redirecionamento e manutenção do foco visual diante de estímulos dinâmicos. Ao fim da terceira fase, métricas como número de acertos (fixação por 5 segundos), número de erros de omissão (demora de 10 segundos ou mais para iniciar a fixação) e erros de comissão (início da fixação antes de 10 segundos, sem manutenção do foco por 5 segundos) são calculados e apresentados ao participante, conforme ilustrado na Figura \ref{fig:fim-terceira-fase}.
 
 \begin{figure}[H]
     \centering
@@ -424,7 +424,7 @@ Considerando a análise realizada pelo profissional e os resultados a serem apre
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
 
-Com o objetivo de aprofundar a compreensão do tema e promover um alinhamento mais preciso entre os aspectos técnicos e psicológicos do projeto, foi conduzida uma pesquisa de campo com quatro profissionais da área da Psicologia. As entrevistas buscaram avaliar a viabilidade técnica da proposta, identificar os sintomas mais recorrentes do TDA e compreender os tipos de estímulos que mais influenciam os processos de distração em indivíduos com esse transtorno. 
+Com o objetivo de aprofundar a compreensão do tema e promover um alinhamento mais preciso entre os aspectos técnicos e psicológicos do projeto, foi conduzida uma pesquisa de campo com quatro profissionais da área da Psicologia. As entrevistas buscaram avaliar a viabilidade técnica da proposta, identificar os sintomas mais recorrentes do TDAH e compreender os tipos de estímulos que mais influenciam os processos de distração em indivíduos com esse transtorno. 
 
 As entrevistas realizadas com os profissionais revelaram que estímulos visuais e auditivos, especialmente movimento, cor e som, exercem papel determinante na indução de distrações nos seus pacientes, devendo, portanto, ser considerados elementos centrais no planejamento das fases experimentais. Adicionalmente, pode-se citar a instrução de avisar os jogadores sobre as distrações. Nas fases um e três, durante as instruções, os participantes são avisados sobre os distratores e orientados a não olhar para eles, pois esta ação impacta negativamente a pontuação, já que o objetivo dessas fases é que a criança mantenha o foco nos alvos, ignorando os distratores.
 
@@ -506,11 +506,11 @@ Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo 
 \section{Conclusão}
 
 
-Este trabalho apresentou o desenvolvimento de uma ferramenta gamificada voltada ao auxílio do pré-diagnóstico de indícios de TDA em crianças de 10 a 12 anos. A solução proposta conseguiu integrar tecnologias distintas, como rastreamento ocular, métricas TDC e dispositivos \textit{IoT}, consolidando uma plataforma funcional para a análise do comportamento atencional.
+Este trabalho apresentou o desenvolvimento de uma ferramenta gamificada voltada ao auxílio do pré-diagnóstico de indícios de TDAH em crianças de 10 a 12 anos. A solução proposta conseguiu integrar tecnologias distintas, como rastreamento ocular, métricas TDC e dispositivos \textit{IoT}, consolidando uma plataforma funcional para a análise do comportamento atencional.
 
 Os resultados demonstram a viabilidade técnica da abordagem, uma vez que o sistema de rastreamento ocular apresentou precisão satisfatória para as demandas atuais e a coleta das métricas TDC mostrou-se adequada para o registro do desempenho dos participantes. O componente de \textit{IoT} também operou de forma promissora, embora tenham sido identificadas oportunidades de melhoria na ergonomia do dispositivo físico. Atualmente, a consolidação definitiva do módulo de IA permanece vinculada ao refinamento da estabilidade dos dados oculares. Para superar essa limitação e aumentar a robustez da predição em diferentes condições de uso, o algoritmo de código aberto em \textit{Python} proposto por Jason Orlosky está sendo estudado e adaptado ao cenário deste projeto, incluindo a utilização da \textit{webcam Logitech C270} para garantir resultados mais estáveis.
 
-A relevância deste estudo reside na criação de uma metodologia alternativa que pode oferecer aos profissionais da saúde dados quantitativos que complementam a observação clínica tradicional. Como continuidade, pretende-se realizar validações em ambiente controlado com especialistas e o público-alvo, permitindo a consolidação do rastreamento ocular. Dessa forma, a inteligência artificial poderá ser treinada com um grande volume de dados para identificar padrões comportamentais específicos. Conclui-se que a proposta possui aplicabilidade prática e um potencial relevante como ferramenta de suporte ao pré-diagnóstico de indícios de TDA, ao mesmo tempo que requer aprimoramentos incrementais para atingir maturidade.
+A relevância deste estudo reside na criação de uma metodologia alternativa que pode oferecer aos profissionais da saúde dados quantitativos que complementam a observação clínica, sem finalidade de substituição dos métodos tradicionais. Como continuidade, pretende-se realizar validações em ambiente controlado com especialistas e o público-alvo, permitindo a consolidação do rastreamento ocular. Dessa forma, a inteligência artificial poderá ser treinada com um grande volume de dados para identificar padrões comportamentais específicos. Conclui-se que a proposta possui aplicabilidade prática e um potencial relevante como ferramenta de suporte ao pré-diagnóstico de indícios de TDA, ao mesmo tempo que requer aprimoramentos incrementais para atingir maturidade.
 
 % Agradecimentos
 \section*{Agradecimentos}
