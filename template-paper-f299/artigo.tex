@@ -72,13 +72,11 @@
     {\thesubsection}{1em}{}
 
 % Informações do artigo
-\title{\vspace{0.6cm}\textbf{\Large Teste de Desempenho Contínuo, Orientado por Rastreamento Ocular}}
+\title{\vspace{0.6cm}\textbf{\Large Teste de Desempenho Contínuo, Orientado Por Rastreamento Ocular}}
 \author{
     Amanda de Oliveira Costa$^{1}$, Arthur Ribeiro Dias Fudali$^{2}$, \\ Diego Baltazar de Souza Claudio$^{3}$, Giovana da Silva Albanês Santos$^{4}$, Igor Leite Gomes$^{5}$ \\[0.3cm]
     \small
     $^{1}$Faculdade de Tecnologia do Estado de São Paulo \\
-    $^{2}$Universidade de São Paulo \\
-    $^{3}$Instituto de Pesquisas Tecnológicas \\[0.2cm]
     \textit{amanda.costa5@aluno.cps.sp.gov.br, arthur.fudali@aluno.cps.sp.gov.br} \\
     \textit{ diego.claudio@aluno.cps.sp.gov.br, giovana.santos10@aluno.cps.sp.gov.br} \\
     \textit{igor.gomes2@aluno.cps.sp.gov.br}
@@ -211,7 +209,8 @@ indícios do TDAH em crianças de 10 a 12 anos.
     atenção durante a execução das tarefas.
     \item Processar automaticamente os dados coletados e compará-los com parâmetros
     normativos para gerar feedback ao usuário.
-    \item Promover uma solução acessível, autônoma e alinhada ao ODS 3 da ONU, que amplie
+    \item Ferramenta de auxílio ao pré-diagnóstico de TDAH, utilizada por profissionais da saúde como complemento na análise clínica.
+    \item Promover uma solução acessível e alinhada ao ODS 3 da ONU, que amplie
     o acesso à triagem inicial de TDA.
 \end{itemize}
 
@@ -285,18 +284,14 @@ Durante toda a experiência, o rastreamento ocular é realizado em segundo plano
     \caption{TensorFlow FaceMesh}%
     \label{fig:facemesh}
     \includegraphics[width=\textwidth]{facemesh.jpg}%
-    \SourceOrNote{Autoria Própria (2026)}
+    \SourceOrNote{(Google Developers, 2026)}
 \end{figure}
 
 O modelo de predição propriamente dito é baseado na Regressão Ridge. A principal função desta técnica é atuar como um mecanismo de regularização, que, simplificadamente, evita o superajustamento \textit{(overfitting)} do modelo. Isso significa que ela impede que o modelo fique muito focado nos dados de treinamento, o que faria com que ele errasse ao lidar com novos usuários. A Regressão Ridge faz isso aliviando a influência dos parâmetros de maior valor no aprendizado. O resultado é um modelo mais robusto e generalizável, capaz de realizar o mapeamento entre a imagem dos olhos e as coordenadas da tela de forma confiável para diferentes participantes. 
 
-\begin{figure}[H]
-    \centering
-    \caption{Fórmula da Regressão Ridge}%
-    \label{fig:regressao-ridge}
-    \includegraphics[width=\textwidth]{regressao-ridge.jpg}%
-    \SourceOrNote{Autoria Própria (2026)}
-\end{figure}
+\begin{equation}
+RSS_{L2} = \sum_{i=1}^{n} (Y_i - \hat{Y}_i)^2 + \lambda \sum_{j=1}^{P} \beta_j^2
+\end{equation}
 
 A fórmula apresentada detalha como o modelo calcula o seu desempenho e define a configuração otimizada para a predição. O termo $RSS_{L2}$ representa a Soma dos Quadrados dos Resíduos, que é a pontuação de erro do modelo. O objetivo da Regressão Ridge é fazer com que esse valor seja o menor possível através de dois componentes principais. O erro residual $Y_i - \hat{Y}_l$, que consiste na diferença entre onde o usuário realmente olhou $Y_i$ e onde o algoritmo previu que ele olhou $\hat{Y}_l$. Eleva-se essa diferença ao quadrado para que erros grandes sejam mais penalizados do que erros pequenos, garantindo que o modelo busque a maior precisão possível. O termo de penalidade $\lambda \sum B_j^2$, componente que impõe uma restrição aos coeficientes $B$, que representam a relevância atribuída a cada ponto de referência facial extraído da imagem capturada pela webcam. Sem essa restrição, o modelo poderia atribuir importância excessiva a ruídos, como variações de iluminação ou sombras. E por fim, o hiperparâmetro $\lambda$, um número definido previamente que controla o rigor dessa restrição. Se o modelo tentar dar importância demais a um detalhe irrelevante, o Lambda aumenta o peso desse erro, forçando os coeficientes $B$ a diminuírem. Ao ponderar esses componentes, o sistema controla o fenômeno do \textit{overfitting} visto que em vez de ajustar-se estritamente às particularidades e ruídos dos dados de calibração momentâneos o algoritmo estabelece um modelo de predição generalizável. \cite{ibm_ridge_regression}
 
@@ -304,7 +299,7 @@ Finalmente, no pós-processamento, as predições de olhar bruto são submetidas
 
 TODO: ADD PARTE DE CLOUD
 
-A plataforma foi desenvolvida com tecnologias web, possibilitando acesso remoto e execução direta em navegadores, preferencialmente com a \textit{webcam Logitech Brio Cam HS}, por apresentar melhor qualidade na captura do olhar. Optou-se pela plataforma \textit{web} considerando-se múltiplos fatores: a estabilidade do equipamento durante a calibração e execução das fases do jogo; o contexto de uso destinado a crianças, para o qual um dispositivo móvel poderia resultar em desatenção ou menor comprometimento, ao ser confundido com uma atividade comum de entretenimento; a temática espacial com abundância de elementos visuais, que exigiria redução dimensional em telas móveis, prejudicando a disposição adequada dos elementos; e, finalmente, o contexto de aplicação por profissionais em ambientes de escritório, onde notebooks são mais disponíveis. O teste é executado em ambiente silencioso, sob supervisão de profissional responsável pela preparação do ambiente, criação do perfil da criança e orientação do procedimento, conforme as instruções disponibilizadas pela plataforma. 
+A plataforma foi desenvolvida com tecnologias web, possibilitando acesso remoto e execução direta em navegadores, preferencialmente com a \textit{webcam LogitechC270}, por apresentar melhor qualidade na captura do olhar. Optou-se pela plataforma \textit{web} considerando-se múltiplos fatores: a estabilidade do equipamento durante a calibração e execução das fases do jogo; o contexto de uso destinado a crianças, para o qual um dispositivo móvel poderia resultar em desatenção ou menor comprometimento, ao ser confundido com uma atividade comum de entretenimento; a temática espacial com abundância de elementos visuais, que exigiria redução dimensional em telas móveis, prejudicando a disposição adequada dos elementos; e, finalmente, o contexto de aplicação por profissionais em ambientes de escritório, onde notebooks são mais disponíveis. O teste é executado em ambiente silencioso, sob supervisão de profissional responsável pela preparação do ambiente, criação do perfil da criança e orientação do procedimento, conforme as instruções disponibilizadas pela plataforma. 
 
 O estudo é estruturado como um jogo digital de temática espacial guiado por rastreamento ocular, composto por três fases com níveis crescentes de dificuldade. O jogo será aplicado por profissionais da saúde, como psicólogos, para a triagem inicial de indícios de TDAH em crianças entre 10 e 12 anos. A mecânica do jogo foi elaborada para simular os princípios do TDC, promovendo a exposição contínua a estímulos visuais por períodos prolongados e exigindo respostas rápidas e consistentes por parte do participante através do olhar, em consonância com paradigmas de avaliação de inibição de resposta e controle atencional em crianças \cite{HOYNIAK2019200}. Além disso, aplicou-se o princípio de avaliação de atenção sustentada proposto em \cite{sciencedirect_cpt}. Nele, a tarefa consiste na observação de estímulos sequenciais com respostas condicionadas a sinais-chave, dinâmica que foi devidamente adaptada e distribuída entre as três fases do sistema. Os dados de fixação visual coletados permitem identificar padrões de atenção ou desatenção, que são contrastados com nossa base de dados em cada etapa da atividade. Todas as fases do experimento são configuradas para potencializar a sobrecarga sensorial e dificultar a concentração do participante. Para tal, utilizam-se música de fundo, cuja intensidade e ritmo são ajustados conforme o nível de dificuldade, e a imposição de um tempo máximo definido, elementos que, em conjunto, intensificam o estresse cognitivo e a exigência da tarefa. O ambiente de teste é controlado, com supervisão profissional, o que garante a padronização das condições de aplicação e a segurança dos participantes. 
 
@@ -380,11 +375,17 @@ O reconhecimento correto de planetas efetivamente exibidos é contabilizado como
 
 A percepção dos planetas é tratada como um dado positivo para a inferência do pré-diagnóstico, pois contribui para a classificação do desempenho atencional da criança em relação aos resultados esperados. Por sua vez, a ausência de reconhecimento desses estímulos é considerada um dado complementar que também compõe a análise final, porém, negativamente. Nesta fase, foram aplicados procedimentos de atenção sustentada.
 
-Para a construção do dispositivo de controle da IoT, foram empregados os seguintes componentes eletrônicos: uma placa de desenvolvimento Arduino, sete botões do tipo \textit{push-button}, sete resistores de 10 k$\Omega$, uma protoboard e cabos de conexão. Os botões foram conectados às portas digitais do Arduino, configuradas como entradas com resistores pull-down para garantir leituras estáveis. Dessa forma, ao término de cada rodada da segunda fase do jogo, o participante registra os planetas que conseguiu observar, pressionando o botão correspondente a ele. O Arduino atua como uma interface de comunicação de hardware, detectando o pressionamento físico dos botões IoT. Por meio da comunicação serial, o microcontrolador transmite o evento acionado ao sistema. O servidor é responsável por receber e interpretar este sinal do botão selecionado e, na sequência, acionar a função que contabiliza os acertos e os erros de inibição do participante para a fase.
-// TODO: colocar foto do arduino 
+Para a construção do dispositivo de controle da IoT, foram empregados os seguintes componentes eletrônicos: uma placa de desenvolvimento Arduino, sete botões do tipo \textit{push-button}, sete resistores de 10 k$\Omega$, três protoboard e cabos de conexão. Os botões foram conectados às portas digitais do Arduino, configuradas como entradas com resistores pull-down para garantir leituras estáveis. Dessa forma, ao término de cada rodada da segunda fase do jogo, o participante registra os planetas que conseguiu observar, pressionando o botão correspondente a ele. O Arduino atua como uma interface de comunicação de hardware, detectando o pressionamento físico dos botões IoT. Por meio da comunicação serial, o microcontrolador transmite o evento acionado ao sistema. O servidor é responsável por receber e interpretar este sinal do botão selecionado e, na sequência, acionar a função que contabiliza os acertos e os erros de inibição do participante para a fase.
 
-Em futuras iterações do projeto, planeja-se o aperfeiçoamento estético e ergonômico do controle, por meio da substituição dos botões convencionais por peças personalizadas, fabricadas via impressão 3D, com design mais atrativo e ergonômico para crianças. Além disso, planeja-se construir uma case para o controle utilizando filamentos de garrafa PET, visando a sustentabilidade ambiental do projeto.
-// TODO: colocar foto do arduino 3D
+\begin{figure}[H]
+    \centering
+    \caption{Controle IoT}%
+    \label{fig:arduino}
+    \includegraphics[width=\textwidth]{iot.jpeg}%
+    \SourceOrNote{Autoria Própria (2026)}
+\end{figure}
+
+Para o aperfeiçoamento estético e ergonômico do controle, os botões convencionais foram substituídos por peças personalizadas, fabricadas via impressão 3D e customizadas com adesivos ilustrativos dos planetas da fase 2, resultando em um design mais atrativo para o público infantil. Entretanto, ainda planeja-se construir uma case para o controle utilizando filamentos de garrafa PET, visando a sustentabilidade ambiental do projeto e otimização ergonômica.
 
 \begin{figure}[H]
     \centering
@@ -404,7 +405,7 @@ Na terceira fase, a demanda cognitiva é intensificada pela necessidade de alter
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
 
-Ao término das três fases, o sistema irá gerar um pré-diagnóstico com base nas métricas TDC. Para isso, serão utilizados os registros de desempenho e os dados mais recentes de rastreamento ocular obtidos durante as fases, sendo eles: acertos, erros de omissão, erros de comissão, tempo de resposta e desvio padrão. Este pré-diagnóstico será elaborado por um módulo de IA, que interpreta as métricas e o desempenho do participante. O feedback resultante é apresentado em duas formas: (1) uma mensagem textual interpretativa, como: “Sua atenção está conforme o esperado”, “Sua atenção está acima do esperado” ou “Sua atenção está abaixo do esperado”, de acordo com o desempenho observado; e (2) a exibição de uma porcentagem que representa a precisão do olhar capturada pelo sistema de rastreamento ocular, conforme ilustrado na Figura \ref{fig:fim-geral}.
+Ao término das três fases, o sistema gera uma estimativa de desempenho atencional com base nas métricas TDC. Para isso, são utilizados os registros de desempenho e os dados mais recentes de rastreamento ocular obtidos durante as fases, sendo eles: acertos, erros de omissão, erros de comissão, tempo de resposta e desvio padrão. Este pré-diagnóstico é elaborado por um módulo de inteligência artificial desenvolvido como um microserviço independente, responsável por interpretar as métricas consolidadas e classificar o desempenho do participante em duas categorias: \textit{positive}, quando o padrão de atenção observado indica um desempenho satisfatório, ou \textit{negative}, quando os indicadores apontam maior comprometimento atencional. O feedback resultante é apresentado em duas formas: (1) uma mensagem textual interpretativa, como: “Sua atenção está conforme o esperado”, “Sua atenção está acima do esperado” ou “Sua atenção está abaixo do esperado”, de acordo com o desempenho observado; e (2) a exibição de uma porcentagem que representa a confiança da predição produzida pelo modelo, conforme ilustrado na Figura \ref{fig:fim-geral}.
 
 \begin{figure}[H]
     \centering
@@ -413,6 +414,12 @@ Ao término das três fases, o sistema irá gerar um pré-diagnóstico com base 
     \includegraphics[width=\textwidth]{fim-geral.png}%
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
+
+A modelagem dessa etapa de inteligência artificial foi construída a partir da consolidação das informações armazenadas no banco de dados. Para o treinamento do classificador, foi criado um conjunto de dados final com uma linha por usuário ou sessão, integrando métricas das fases do experimento. Assim, o modelo opera sobre atributos resumidos do comportamento visual do participante, como tempo médio de reação, desvio padrão, número de acertos, erros de comissão, erros de omissão e taxa de acerto.
+
+Antes do treinamento, os atributos são organizados e aplica-se o \textit{StandardScaler} para normalização das variáveis. O classificador utilizado é uma \textit{Random Forest} com 100 árvores, treinada com divisão de 80\% para treino e 20\% para teste, além de validação cruzada estratificada com a métrica \textit{ROC-AUC} quando há quantidade suficiente de amostras por classe. No final, o modelo, o escalador e a definição das características são salvos no sistema de armazenamento.
+
+A predição ocorre por meio de um serviço \textit{REST} implementado em \textit{FastAPI}, executado em um contêiner separado e exposto no endpoint \texttt{/predict}. Esse serviço recebe as métricas agregadas, aplica o escalonamento e calcula a probabilidade de classificação positiva. A decisão final é obtida por um limiar de 0,5. A comunicação entre o \textit{backend} principal e o módulo de IA ocorre por requisição \textit{HTTP}; ao final da fase 3, o servidor reúne as métricas das três fases e as envia ao serviço, que retorna a avaliação final para armazenamento e exibição ao usuário.
 
 Considerando a análise realizada pelo profissional e os resultados a serem apresentados aos pais ou responsáveis, o pré-diagnóstico é disponibilizado em relatório com linguagem clara, acessível e visualmente intuitiva. A mensagem interpretativa é redigida sem termos técnicos, de modo a oferecer uma avaliação direta do desempenho da criança em relação aos padrões esperados. A Figura \ref{fig:relatorio} exemplifica o layout e o conteúdo do relatório gerado pelo sistema, que visa facilitar a compreensão dos resultados e orientar as decisões futuras.
 
@@ -442,7 +449,7 @@ Para uma melhor compreensão do funcionamento do sistema, a Figura \ref{fig:flux
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
 
-Na etapa 1, ocorre a calibração dos olhos do jogador, processo em que o sistema identifica e ajusta os pontos de fixação ocular do usuário antes do início do jogo, garantindo a precisão do rastreamento. Em seguida, é executada a coleta das métricas TDC, que ocorre automaticamente durante as três fases do jogo. Nessa etapa, o sistema processa e registra parâmetros como número de acertos, erros de omissão, erros de comissão, tempo de reação e variabilidade temporal das respostas. Na etapa 2, há uma tomada de decisão para verificar se o participante irá jogar no modo de treinamento. Caso o modo de treinamento esteja habilitado (etapa 3), o sistema armazena as métricas TDC em uma base de dados, permitindo que o módulo de treinamento da IA realize a análise comparativa entre os dados do indivíduo e a base existente. Esse processo visa aprimorar o modelo e gerar um pré-diagnóstico personalizado. Já na etapa 4, quando o modo de treinamento não está ativado, o sistema realiza diretamente a geração e exibição do pré-diagnóstico, utilizando as métricas coletadas durante a execução do jogo. 
+Na etapa 1, ocorre a calibração dos olhos do jogador, processo em que o sistema identifica e ajusta os pontos de fixação ocular do usuário antes do início do jogo, garantindo a precisão do rastreamento. Em seguida, é executada a coleta das métricas TDC, que ocorre automaticamente durante as três fases do jogo. Nessa etapa, o sistema processa e registra parâmetros como número de acertos, erros de omissão, erros de comissão, tempo de reação e variabilidade temporal das respostas. Na etapa 2, há uma tomada de decisão para verificar se o participante irá jogar no modo de treinamento. Caso o modo de treinamento esteja habilitado (etapa 3), o sistema armazena as métricas TDC em uma base de dados, permitindo a retroalimentação da IA, que realiza a análise comparativa entre os dados do indivíduo e a base existente para geração da estimativa de desempenho atencional. Vale resssaltar que a etapa 3 será implementada em iterações futuras. Já na etapa 4, quando o modo de treinamento não está ativado, o sistema realiza diretamente a geração e exibição da análise atencional, utilizando as métricas coletadas durante a execução do jogo. 
 
 Uma vez estabelecida a lógica de execução das etapas, a implementação técnica do sistema fundamenta-se em uma arquitetura cliente-servidor. Ao iniciar a fase 1, estabelece-se uma conexão via \textit{WebSocket} entre o cliente e o servidor. Em seguida, o servidor identifica o cliente conectado, que envia as coordenadas das estrelas para o endpoint $\texttt{/iniciar\_fase1}$. O processo de \textit{eye tracking} é então iniciado, e o cliente passa a transmitir as coordenadas dos olhos a cada 1 segundo para $\texttt{/gaze\_data\_fase1}$. Paralelamente, o servidor seleciona uma das cinco estrelas como alvo atual, enquanto o cliente permanece em escuta por meio de $\texttt{/fase1\_iniciada}$, responsável por destacar a estrela correspondente e manter o envio das coordenadas oculares. Esse procedimento se repete até que todas as estrelas sejam visualizadas por, no mínimo, 5 segundos, de modo que o participante fixe o olhar no alvo até sua desaparecimento da tela. Ao final da fase, o servidor salva o objeto $\texttt{ExperimentosFase1Schema}$ no banco de dados, contendo as informações do paciente, a data e a hora do teste, um array do histórico de olhar da criança, com o alvo, as coordenadas e o estado de fixação, além de um array com o resultado de cada alvo, indicando métricas de tempo e o motivo do término. Após o armazenamento desses dados, o servidor calcula as métricas TDC da fase 1 e salva o objeto $\texttt{EstatisticasFase1Schema}$ com: número de acertos (fixação por 5 segundos), número de erros de omissão (demora de 10 segundos ou mais para iniciar a fixação) e erros de comissão (início da fixação antes de 10 segundos, sem manutenção do foco por 5 segundos). Essas métricas são enviadas ao cliente por meio de $\texttt{/fase\_concluida}$. 
 
@@ -456,59 +463,19 @@ Durante a fase 3, o servidor identifica o cliente conectado, que envia a configu
 % Resultados e Discussões
 \section{Resultados e Discussões}
 
-\lipsum[12-13] Os resultados obtidos demonstram a eficácia da metodologia proposta. A Tabela \ref{tab:resultados} apresenta uma comparação quantitativa entre diferentes abordagens.
+Os resultados apresentados referem-se à validação técnica do protótipo, uma vez que ainda não foi realizada validação clínica com amostras representativas.
 
-\begin{table}[H]
-\centering
-\caption{Comparação de desempenho entre diferentes métodos}
-\label{tab:resultados}
-\begin{tabular}{@{}lccc@{}}
-\toprule
-\textbf{Método} & \textbf{RMSE} & \textbf{Tempo (s)} & \textbf{Precisão (\%)} \\ \midrule
-Método Proposto & 0.0023 & 15.2 & 98.5 \\
-Euler Clássico & 0.0145 & 8.7 & 92.3 \\
-Runge-Kutta 4ª ordem & 0.0038 & 21.5 & 97.1 \\
-Método Adaptativo & 0.0031 & 18.9 & 97.8 \\ \bottomrule
-\end{tabular}
-\end{table}
+O protótipo demonstrou funcionamento consistente em todas as etapas previstas. A calibração de nove pontos estabeleceu o mapeamento inicial do olhar em condições de iluminação controlada, e o módulo de captura ocular manteve o envio contínuo de coordenadas ao servidor durante a execução das fases. A comunicação via \textit{WebSocket} suportou a sincronização necessária para destacar alvos e registrar fixações, enquanto a integração com o dispositivo \textit{IoT} permitiu o acionamento correto do LED e a leitura dos eventos de pressão dos botões.
 
-\subsection{Análise Quantitativa}
-
-\lipsum[14] Os dados quantitativos revelam que o método proposto apresenta melhor desempenho em termos de precisão. A relação entre os parâmetros pode ser expressa por:
-
-\begin{equation}
-\eta = \frac{P_{out}}{P_{in}} \times 100\% = \frac{V_{out} \cdot I_{out}}{V_{in} \cdot I_{in}} \times 100\%
-\label{eq:efficiency}
-\end{equation}
-
-onde $\eta$ representa a eficiência do sistema, $P_{out}$ é a potência de saída e $P_{in}$ é a potência de entrada.
-
-\subsection{Análise Qualitativa}
-
-\lipsum[15] Do ponto de vista qualitativo, observou-se que o comportamento do sistema é fortemente influenciado pelas condições iniciais e pelos parâmetros de controle. A matriz de transformação pode ser representada como:
-
-\begin{equation}
-\mathbf{A} = \begin{bmatrix}
-a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23} \\
-a_{31} & a_{32} & a_{33}
-\end{bmatrix}
-\label{eq:matrix}
-\end{equation}
-
-\subsection{Discussão}
-
-\lipsum[16-17] A análise dos resultados indica que a abordagem proposta oferece vantagens significativas em relação aos métodos tradicionais. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
-
-Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+Durante os testes, o sistema registrou de forma estruturada as métricas previstas pelo protocolo adaptado do TDC: acertos, erros de omissão, erros de comissão, tempo de reação e variabilidade temporal das respostas. Esses dados são exibidos ao final de cada fase e consolidados em um relatório final.
+No entanto, foram identificadas limitações relevantes. O rastreamento ocular funcionou de forma estável, mas a precisão obtida ainda não é satisfatória para o uso adequado no contexto do projeto, sendo sensível a variações de iluminação e ao modelo de webcam utilizado. O módulo de IA foi implementado e treinado, porém com dados sintéticos e em volume reduzido, o que impede qualquer conclusão sobre sua eficácia real; a validação do modelo depende da coleta de dados com o público-alvo. Os próximos passos incluem coleta com participantes reais, anotação e ampliação da base de dados, refinamento da calibração e testes de usabilidade com o dispositivo \textit{IoT}.
 
 % Conclusão
 \section{Conclusão}
 
-
 Este trabalho apresentou o desenvolvimento de uma ferramenta gamificada voltada ao auxílio do pré-diagnóstico de indícios de TDAH em crianças de 10 a 12 anos. A solução proposta conseguiu integrar tecnologias distintas, como rastreamento ocular, métricas TDC e dispositivos \textit{IoT}, consolidando uma plataforma funcional para a análise do comportamento atencional.
 
-Os resultados demonstram a viabilidade técnica da abordagem, uma vez que o sistema de rastreamento ocular apresentou precisão satisfatória para as demandas atuais e a coleta das métricas TDC mostrou-se adequada para o registro do desempenho dos participantes. O componente de \textit{IoT} também operou de forma promissora, embora tenham sido identificadas oportunidades de melhoria na ergonomia do dispositivo físico. Atualmente, a consolidação definitiva do módulo de IA permanece vinculada ao refinamento da estabilidade dos dados oculares. Para superar essa limitação e aumentar a robustez da predição em diferentes condições de uso, o algoritmo de código aberto em \textit{Python} proposto por Jason Orlosky está sendo estudado e adaptado ao cenário deste projeto, incluindo a utilização da \textit{webcam Logitech C270} para garantir resultados mais estáveis.
+Os resultados demonstram a viabilidade técnica da abordagem, uma vez que o sistema de rastreamento ocular apresentou precisão satisfatória para as demandas atuais e a coleta das métricas TDC mostrou-se adequada para o registro do desempenho dos participantes. O componente de \textit{IoT} também operou de forma promissora, embora tenham sido identificadas oportunidades de melhoria na ergonomia do dispositivo físico. Atualmente, a consolidação definitiva do módulo de IA permanece vinculada ao refinamento da estabilidade dos dados oculares. Para superar essa limitação e aumentar a robustez da predição em diferentes condições de uso, o algoritmo de código aberto em \textit{Python} \cite{orlosky2023eyetracker} proposto por Jonathan Orlosky está sendo estudado e adaptado ao cenário deste projeto. Originalmente desenvolvido para sistemas baseados em óculos com câmaras integradas (\textit{eye-tracking wearable}), o algoritmo está adaptado para operar utilizando uma \textit{webcam Logitech C270} estática. Esse algoritmo baseia-se na extração de \textit{facial landmarks} e em modelos geométricos tridimensionais para estimar a orientação do olhar em tempo real, permitindo mapear as coordenadas oculares sem a necessidade de hardware especializado. Além deste, está sendo analisado o projeto de investigação científica desenvolvido pela NVlabs, departamento de pesquisa de inteligência artificial da NVIDIA, chamado Few-Shot Gaze. A proposta deste modelo é realizar um rastreamento ocular computado com poucos pontos de calibração utilizando imagens faciais, por meio de \textit{deep learning}, o sistema reconstrói a imagem da face do usuário olhando para diferentes regiões da tela até que o modelo seja capaz de inferir a direção exata do olhar \cite{park2019faze}. Ambos os projetos, embora ainda em fase de estudo, apresentam potencial para aprimorar a precisão e a estabilidade do rastreamento ocular, o que é fundamental para a eficácia do sistema como ferramenta de suporte ao pré-diagnóstico de TDAH.
 
 A relevância deste estudo reside na criação de uma metodologia alternativa que pode oferecer aos profissionais da saúde dados quantitativos que complementam a observação clínica, sem finalidade de substituição dos métodos tradicionais. Como continuidade, pretende-se realizar validações em ambiente controlado com especialistas e o público-alvo, permitindo a consolidação do rastreamento ocular. Dessa forma, a inteligência artificial poderá ser treinada com um grande volume de dados para identificar padrões comportamentais específicos. Conclui-se que a proposta possui aplicabilidade prática e um potencial relevante como ferramenta de suporte ao pré-diagnóstico de indícios de TDA, ao mesmo tempo que requer aprimoramentos incrementais para atingir maturidade.
 
