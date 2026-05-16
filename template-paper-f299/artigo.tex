@@ -284,7 +284,7 @@ Durante toda a experiência, o rastreamento ocular é realizado em segundo plano
     \caption{TensorFlow FaceMesh}%
     \label{fig:facemesh}
     \includegraphics[width=\textwidth]{facemesh.jpg}%
-    \SourceOrNote{Autoria Própria (2026)}
+    \SourceOrNote{(Google Developers, 2026)}
 \end{figure}
 
 O modelo de predição propriamente dito é baseado na Regressão Ridge. A principal função desta técnica é atuar como um mecanismo de regularização, que, simplificadamente, evita o superajustamento \textit{(overfitting)} do modelo. Isso significa que ela impede que o modelo fique muito focado nos dados de treinamento, o que faria com que ele errasse ao lidar com novos usuários. A Regressão Ridge faz isso aliviando a influência dos parâmetros de maior valor no aprendizado. O resultado é um modelo mais robusto e generalizável, capaz de realizar o mapeamento entre a imagem dos olhos e as coordenadas da tela de forma confiável para diferentes participantes. 
