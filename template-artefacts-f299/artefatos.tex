@@ -1,0 +1,819 @@
+\documentclass[11pt,a4paper]{article}
+
+% Pacotes essenciais
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage[round,authoryear]{natbib}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usepackage[hidelinks]{hyperref}
+
+% Definição das cores
+\definecolor{headercolor}{HTML}{b11116}
+\definecolor{secondarycolor}{HTML}{3a5461}
+
+% Configuração da página
+\geometry{
+    a4paper,
+    top=2.8cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=2.5cm,
+    headheight=1.2cm,
+    headsep=0.5cm
+}
+
+% Configuração do cabeçalho
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\fancyhead[L]{%
+    \begin{tikzpicture}[remember picture, overlay]
+        \fill[headercolor] (current page.north west) rectangle ([yshift=-1.2cm]current page.north east);
+        \node[anchor=west, inner sep=0pt] at ([xshift=1cm, yshift=-0.6cm]current page.north west) 
+            {\includegraphics[height=0.8cm]{imgs/base/fatec-rgt.png}};
+        \node[anchor=east, inner sep=0pt] at ([xshift=-1cm, yshift=-0.6cm]current page.north east) 
+            {\includegraphics[height=0.9cm]{imgs/base/cps-logo.png}};
+        \node[anchor=east, inner sep=0pt] at ([xshift=-2.8cm, yshift=-0.6cm]current page.north east) 
+            {\includegraphics[height=1.05cm]{imgs/base/governo-sp-secretaria-logo.png}};
+    \end{tikzpicture}
+}
+
+\fancyfoot[L]{\footnotesize\textcolor{secondarycolor}{Faculdade de Tecnologia do Estado de São Paulo\\ fatecregistro.cps.sp.gov.br}}
+\fancyfoot[R]{\thepage}
+
+% Configuração dos títulos das seções
+\titleformat{\section}
+    {\normalfont\large\bfseries\color{secondarycolor}}
+    {\thesection}{1em}{}
+
+\titleformat{\subsection}
+    {\normalfont\normalsize\bfseries\color{secondarycolor}}
+    {\thesubsection}{1em}{}
+
+\begin{document}
+
+% ===== CAPA =====
+\begin{titlepage}
+    \centering
+    
+    % Logos no topo
+    \begin{tikzpicture}[remember picture, overlay]
+        \fill[headercolor] (current page.north west) rectangle ([yshift=-1.2cm]current page.north east);
+        \node[anchor=west, inner sep=0pt] at ([xshift=1cm, yshift=-0.6cm]current page.north west) 
+            {\includegraphics[height=0.8cm]{imgs/base/fatec-rgt.png}};
+        \node[anchor=east, inner sep=0pt] at ([xshift=-1cm, yshift=-0.6cm]current page.north east) 
+            {\includegraphics[height=0.9cm]{imgs/base/cps-logo.png}};
+        \node[anchor=east, inner sep=0pt] at ([xshift=-2.8cm, yshift=-0.6cm]current page.north east) 
+            {\includegraphics[height=1.05cm]{imgs/base/governo-sp-secretaria-logo.png}};
+    \end{tikzpicture}
+    
+    \vspace*{3.5cm}
+    
+    % Nome da faculdade
+    {\normalsize FACULDADE DE TECNOLOGIA DO ESTADO DE SÃO PAULO\par}
+    \vspace{0.5cm}
+    
+    % Curso
+    {\normalsize DESENVOLVIMENTO DE SOFTWARE MULTIPLATAFORMA\par}
+    
+    \vspace{4cm}
+    
+    % Artefatos do Projeto de Software
+    {\normalsize ARTEFATOS DO PROJETO DE SOFTWARE\par}
+    
+    \vspace{0.3cm}
+    
+    % Nome do projeto
+    {\normalsize Teste de Desempenho Contínuo, Orientado por Rastreamento Ocular\par}
+    
+    \vspace{3cm}
+    
+    % Autores
+    {\normalsize
+    Amanda de Oliveira Costa\\
+    Arthur Ribeiro Dias Fudali\\
+    Diego Baltazar de Souza Claudio\\
+    Giovana da Silva Albanês Santos\\
+    Igor Leite Gomes
+    }
+    
+    \vfill
+    
+    % Rodapé
+    {\small Registro -- SP\\
+    2026}
+    
+\end{titlepage}
+
+% Força o cabeçalho em todas as páginas
+\pagestyle{fancy}
+
+% ===== SUMÁRIO =====
+\tableofcontents
+\newpage
+
+% ===== CANVAS =====
+\section{CANVAS: Modelo de Negócio e Estratégia}
+
+Esse modelo de negócios foi estruturado de acordo com os nove blocos do Canvas, permitindo visualizar de forma integrada os principais elementos que compõem a proposta de valor, os recursos, os canais e a estrutura operacional do projeto Focus Quest.
+
+Os Segmentos de Clientes alvo compreendem clínicas de neuropsicologia e psiquiatria, profissionais autônomos da saúde mental e instituições de reabilitação cognitiva. A Proposta de Valor consiste em desenvolver um serious game que avalia a atenção sustentada, impulsividade e tempo de resposta com base no Teste de Desempenho Contínuo (TDC), devolvendo um feedback imediato do resultado para cada usuário.
+
+Os Canais de entrega envolvem o uso de computadores com câmeras e acesso à internet, com o sistema devidamente hospedado em servidor. O Relacionamento com o Cliente baseia-se em testes gamificados e interativos que permitem a geração de um pré-diagnóstico rápido por meio de um layout simples e intuitivo.
+
+As Fontes de Renda são viabilizadas através de anúncios na internet, do tráfego no website, da disponibilidade do software para download e do sistema de recomendações de outros usuários. Entre os Recursos-Chave, destacam-se a facilidade de uso do software, a alta interatividade e a conveniência de gerar relatórios automatizados com interpretação de resultados.
+
+As Atividades-Chave compreendem a criação de conteúdo educacional, o desenvolvimento e manutenção do sistema, além do suporte contínuo ao usuário. Os Parceiros-Chave foram identificados como as próprias clínicas de saúde mental e o usuário final, que colaboram com o ecossistema do projeto.
+
+Por fim, a Estrutura de Custos é dividida entre custos fixos, como internet, hospedagem e investimento em tráfego pago, e custos variáveis, que abrangem o desenvolvimento de software, marketing, suporte e o patrocínio de especialistas em neuropsicologia e psiquiatria para validação do sistema.
+
+\begin{table}[H]
+\centering
+\caption{Business Model Canvas -- PI - Focus Quest}
+\label{tab:canvas}
+\small
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{3.2cm}|p{2.6cm}|p{2.8cm}|}
+\hline
+\textbf{1. Segmento de clientes} & \textbf{2. Proposta de valor} & \textbf{3. Canais} & \textbf{4. Relacionamento} & \textbf{5. Fontes de renda} \\
+\hline
+Clínicas de neuropsicologia e psiquiatria \newline Profissionais da saúde mental autônomos \newline Instituições de reabilitação cognitiva
+&
+Desenvolver um serious game que avalia atenção sustentada, impulsividade e tempo de resposta com base no Teste de Desempenho Contínuo (TDC) \newline Devolver um Feedback do resultado do teste de cada usuário
+&
+Computador com camera e acesso a internet \newline Hospedagem em servidor
+&
+Testes Gameficados e Interativos \newline Geração de um Pré-diagnóstico rápido \newline Layout Simples e Intuitivo
+&
+Anuncios na internet \newline Website \newline Disponibilidade para Download \newline Recomendações de outros usuários \\
+\hline
+& \textbf{6. Recursos chave} & & \textbf{7. Atividades chave} & \\
+\hline
+& Software de uso fácil \newline Teste Gameficado e Interativo \newline Feedback gamificado para o usuário final \newline Conveniencia de ter um pré-diagnóstico \newline Alta interatividade \newline Relatórios automatizados com interpretação de resultados
+& &
+Criação de conteúdo educacional \newline Desenvolvimento de software \newline Manutenção do sistema \newline Suporte ao usuário &
+\\
+\hline
+\multicolumn{2}{|p{5.5cm}|}{\textbf{8. Parceiros chave}} & \multicolumn{3}{p{9.4cm}|}{\textbf{9. Estrutura de custos}} \\
+\hline
+\multicolumn{2}{|p{5.5cm}|}{Clínicas de saúde mental \newline Usuário final} & \multicolumn{3}{p{9.4cm}|}{Custos fixos: internet, hospedagem do programa, infraestrutura, investimento em tráfego pago \newline Custos variáveis: Desenvolvimento de software, manutenção de software, custo de marketing e divulgação, patrocínio de especialistas em neuropsicologia e psiquiatria, custo de testes com usuários, custo de recrutamento e formação de usuários, custo de suporte ao usuário} \\
+\hline
+\end{tabular}
+\end{table}
+
+Esse artefato auxilia na visualização estratégica do projeto Focus Quest, evidenciando sua
+viabilidade técnica e comercial, além de integrar as dimensões tecnológicas, clínicas e de mercado do
+produto proposto.
+
+% ===== SWOT =====
+\section{SWOT: Análise Estratégica}
+
+A Análise SWOT (também conhecida como FOFA) do projeto \textit{Focus Quest} funciona como um diagnóstico estratégico, permitindo uma visão integrada entre as capacidades internas do sistema e o ecossistema externo de saúde e tecnologia. Esta análise é fundamental para mitigar riscos e potencializar os diferenciais competitivos da solução.
+
+\subsubsection{Fatores Internos: O Core do Projeto}
+
+No âmbito interno, o projeto destaca-se pela \textbf{Inovação Biométrica}. O uso de \textit{eye-tracking} em um ambiente gamificado transforma uma tarefa clínica geralmente exaustiva em uma experiência de alto engajamento, o que aumenta a fidelidade dos dados coletados e reduz a taxa de abandono do teste. 
+
+Por outro lado, a \textbf{Dependência de Hardware} é um ponto de atenção crítico. A eficácia da ferramenta está atrelada à qualidade da câmera e às condições de iluminação do usuário final. Isso exige um esforço contínuo em otimização de software e algoritmos de calibração para garantir que a solução seja acessível e confiável em diversos cenários domésticos ou clínicos.
+
+\subsubsection{Fatores Externos: Oportunidades e Resiliência}
+
+O cenário externo revela um terreno fértil para a \textbf{Expansão Digital} na saúde. A crescente aceitação da telemedicina e da triagem remota abre portas para parcerias B2B (\textit{Business-to-Business}) com clínicas e instituições de ensino, posicionando o \textit{Focus Quest} como uma solução de baixo custo e alta escalabilidade. 
+
+Entretanto, o projeto opera em um setor altamente regulado. A conformidade com a \textbf{LGPD (Lei Geral de Proteção de Dados)} e as normas de saúde representam ameaças estruturais que exigem rigor técnico e jurídico. Além disso, a possível entrada de grandes \textit{players} de \textit{MedTech} exige que o projeto mantenha agilidade na inovação e foco na experiência do usuário para preservar sua diferenciação de mercado.
+
+\subsubsection{Síntese e Direcionamento}
+
+Em suma, a SWOT indica que o sucesso do \textit{Focus Quest} depende da capacidade de converter sua superioridade técnica e científica em uma ferramenta de fácil adoção. O foco estratégico imediato reside em reduzir as barreiras técnicas de entrada enquanto se fortalecem as barreiras de saída através do rigor científico e da fidelização dos profissionais da área.
+
+\begin{table}[H]
+\centering
+\caption{Análise SWOT Estratégica - Projeto Focus Quest}
+\label{tab:swot}
+\small
+\begin{tabular}{|p{7.2cm}|p{7.2cm}|}
+\hline
+\multicolumn{2}{|c|}{\cellcolor{gray!20}\textbf{FATORES INTERNOS (Contornáveis)}} \\
+\hline
+\textbf{FORÇAS (Strengths)} & \textbf{FRAQUEZAS (Weaknesses)} \\
+\hline
+\begin{minipage}[t]{7cm}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Inovação Biométrica:} Diferencial competitivo com uso de \textit{eye-tracking} acessível.
+    \item \textbf{Engajamento:} Metodologia de \textit{Serious Game} que reduz o abandono em testes clínicos.
+    \item \textbf{Rigor Científico:} Alinhamento técnico com o protocolo TDC (Teste de Desempenho Contínuo).
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}[t]{7cm}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Dependência de Hardware:} Sensibilidade a variações de iluminação e qualidade de câmeras externas.
+    \item \textbf{Barreiras de Dados:} Complexidade na aquisição de bases de dados clínicas robustas para validação.
+    \item \textbf{Calibração:} Necessidade de ajuste inicial que pode afetar a experiência do usuário.
+\end{itemize}
+\end{minipage}
+\\
+\hline
+\multicolumn{2}{|c|}{\cellcolor{gray!20}\textbf{FATORES EXTERNOS (Incontroláveis)}} \\
+\hline
+\textbf{OPORTUNIDADES (Opportunities)} & \textbf{AMEAÇAS (Threats)} \\
+\hline
+\begin{minipage}[t]{7cm}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Expansão Digital:} Crescente demanda por ferramentas de triagem remota e telemedicina.
+    \item \textbf{Parcerias B2B:} Potencial de adoção por instituições de ensino e clínicas neuropsicológicas.
+    \item \textbf{Diferenciação de Mercado:} Inexistência de soluções gamificadas semelhantes no cenário nacional.
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}[t]{7cm}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Compliance e LGPD:} Rigor na proteção de dados sensíveis e diagnósticos de saúde.
+    \item \textbf{Barreiras de Adoção:} Resistência de profissionais tradicionais a métodos de triagem automatizados.
+    \item \textbf{Concorrência:} Entrada de grandes \textit{players} de MedTech com maior capacidade de investimento.
+\end{itemize}
+\end{minipage}
+\\
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Recomendações Estratégicas}
+
+Com base no cruzamento das variáveis da análise SWOT, as diretrizes estratégicas para o desenvolvimento do \textit{Focus Quest} devem focar em quatro eixos de atuação:
+
+\begin{itemize}
+    \item \textbf{Estratégias Ofensivas (Forças + Oportunidades):} Explorar a \textbf{Inovação Biométrica} (eye-tracking) para posicionar o produto como líder no nicho de triagem remota e telemedicina, utilizando a gamificação como diferencial de mercado frente a métodos tradicionais.
+    
+    \item \textbf{Estratégias de Confronto (Forças + Ameaças):} Utilizar o \textbf{Rigor Científico} (alinhamento ao TDC) e os dados de engajamento para mitigar a resistência de profissionais tradicionais, estabelecendo o sistema como uma ferramenta de apoio diagnóstico confiável e difícil de ser replicada por concorrentes genéricos.
+    
+    \item \textbf{Estratégias de Reforço (Fraquezas + Oportunidades):} Firmar parcerias estratégicas \textbf{B2B} com clínicas e instituições de ensino para facilitar a coleta de bases de dados clínicas, superando a barreira de validação e acelerando o aprimoramento dos algoritmos de rastreamento.
+    
+    \item \textbf{Estratégias Defensivas (Fraquezas + Ameaças):} Estabelecer protocolos rígidos de \textbf{Compliance e LGPD} para proteção de dados sensíveis e investir em UX (\textit{User Experience}) para simplificar a calibração de hardware, evitando que limitações técnicas ou burocráticas abram espaço para a concorrência.
+\end{itemize}
+
+% ===== UX/UI =====
+\section{UX/UI: Design de Interface e Experiência do Usuário}
+
+UX (User Experience) e UI (User Interface) \cite{silva2025} são disciplinas complementares focadas em criar produtos digitais que sejam funcionais, acessíveis e agradáveis de usar.\footnote{Ferramentas populares para design UX/UI incluem Figma, Adobe XD, Sketch e InVision.} O UX concentra-se na experiência geral do usuário, enquanto o UI cuida dos elementos visuais e interativos.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \fbox{\includegraphics[width=0.9\textwidth]{imgs/wireframe.png}}
+    \caption{Wireframe da tela inicial}
+    \label{fig:wireframe}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \fbox{\includegraphics[width=0.9\textwidth]{imgs/mockup.png}}
+    \caption{Mockup de alta fidelidade}
+    \label{fig:mockup}
+\end{minipage}
+\end{figure}
+
+\subsection{Protótipo}
+
+O protótipo do projeto foi desenvolvido utilizando a ferramenta Figma.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Login.png}
+\caption{Protótipo da tela de login}
+\label{fig:prototype-login}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Cadastro.png}
+\caption{Protótipo da tela de cadastro}
+\label{fig:prototype-cadastro}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Tela-inicial.png}
+\caption{Protótipo da tela inicial}
+\label{fig:prototype-tela-inicial}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Menu.png}
+\caption{Protótipo do menu}
+\label{fig:prototype-menu}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Fase1.png}
+\caption{Protótipo da fase 1}
+\label{fig:prototype-fase1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/fase1-instruções.png}
+\caption{Protótipo da fase 1 - Instruções}
+\label{fig:prototype-fase1-instrucoes}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/fase1-instruções1.png}
+\caption{Protótipo da fase 1 - Instruções 1}
+\label{fig:prototype-fase1-instrucoes1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Resultados.png}
+\caption{Protótipo da tela de resultados}
+\label{fig:prototype-resultados}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Fase2.png}
+\caption{Protótipo da fase 2}
+\label{fig:prototype-fase2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/fimfase2.png}
+\caption{Protótipo da tela de fim da fase 2}
+\label{fig:prototype-fimfase2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Resultadosfase2.png}
+\caption{Protótipo da tela de resultados da fase 2}
+\label{fig:prototype-resultadosfase2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Fase3.png}
+\caption{Protótipo da fase 3}
+\label{fig:prototype-fase3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/fase3resultados.png}
+\caption{Protótipo da tela de finalização da fase 3}
+\label{fig:prototype-fimfase3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Resultadosfase3.png}
+\caption{Protótipo da tela de resultados da fase 3}
+\label{fig:prototype-resultadosfase3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/pacientes.png}
+\caption{Protótipo da tela de pacientes}
+\label{fig:prototype-pacientes}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imgs/Editarpaciente.png}
+\caption{Protótipo da tela de editar paciente}
+\label{fig:prototype-editarpaciente}
+\end{figure}
+
+\subsection{Guia de Estilos}
+
+\begin{table}[H]
+\centering
+\caption{Paleta de Cores do Projeto}
+\label{tab:cores}
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Elemento} & \textbf{Cor} & \textbf{Código HEX} & \textbf{Uso} \\
+\hline
+Primária & \colorbox[HTML]{FF7B00}{\phantom{AAA}} & \#FF7B00 & Botões principais, destaques, Títulos \\
+Texto & \colorbox[HTML]{3B3B3B}{\phantom{AAA}} & \#3B3B3B & Texto principal \\
+Fundo & \colorbox[HTML]{FFFFFF}{\phantom{AAA}} & \#FFFFFF & Background padrão \\
+Sucesso & \colorbox[HTML]{00c950}{\phantom{AAA}} & \#00c950 & Mensagens de sucesso \\
+Erro & \colorbox[HTML]{fb2c36}{\color{white}\phantom{AAA}} & \#fb2c36 & Mensagens de erro \\
+\hline
+\end{tabular}
+\end{table}
+
+% ===== WEBSITE =====
+\section{Website: Estrutura e Especificações Técnicas Web}
+
+Esta seção documenta o website institucional/portfólio da equipe que desenvolveu a aplicação. O site da equipe serve para apresentar os membros, projetos realizados, competências e informações de contato.
+
+\subsection{Mapa do Site da Equipe}
+
+O mapa do site (sitemap) mostra a hierarquia e organização das páginas do website da equipe:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    level 1/.style={sibling distance=4cm, level distance=1.5cm},
+    level 2/.style={sibling distance=2cm, level distance=1.5cm},
+    every node/.style={rectangle, draw, rounded corners, 
+                       fill=secondarycolor!20, 
+                       text width=2.5cm, 
+                       align=center,
+                       font=\small}
+]
+\node {Home}
+    child {node {Sobre Nós}
+        child {node {Equipe}}
+        child {node {Missão}}
+    }
+    child {node {Projetos}
+        child {node {Portfólio}}
+        child {node {Cases}}
+    }
+    child {node {Serviços}
+        child {node {Desenvolvimento}}
+        child {node {Consultoria}}
+    }
+    child {node {Contato}
+        child {node {Formulário}}
+        child {node {Localização}}
+    };
+\end{tikzpicture}
+\caption{Estrutura de navegação do website da equipe}
+\label{fig:sitemap}
+\end{figure}
+
+\subsection{Conteúdo das Páginas}
+
+\textbf{Páginas principais do site da equipe:}
+
+\begin{itemize}
+    \item \textbf{Home:} Apresentação da equipe, destaques de projetos recentes
+    \item \textbf{Sobre Nós:} História da equipe, missão, visão e valores
+    \item \textbf{Equipe:} Perfil dos membros (nome, foto, função, LinkedIn/GitHub)
+    \item \textbf{Portfólio:} Showcase dos projetos desenvolvidos com descrições e imagens
+    \item \textbf{Serviços:} Descrição dos serviços oferecidos pela equipe
+    \item \textbf{Contato:} Formulário de contato, e-mail, redes sociais
+\end{itemize}
+
+\subsection{Como Inserir Screenshots do Website da Equipe}
+
+Para documentar as páginas do website da equipe:
+
+\begin{verbatim}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/website-equipe-home.png}
+\caption{Página inicial do website da equipe}
+\label{fig:website-home}
+\end{figure}
+\end{verbatim}
+
+\subsection{Especificações Técnicas do Site da Equipe}
+
+\begin{table}[H]
+\centering
+\caption{Stack Tecnológica do Website da Equipe}
+\label{tab:stack-web}
+\begin{tabular}{|l|l|p{6cm}|}
+\hline
+\textbf{Camada} & \textbf{Tecnologia} & \textbf{Descrição} \\
+\hline
+Frontend & React 18.2 & Biblioteca JavaScript para interfaces \\
+Estilização & Tailwind CSS & Framework CSS utilitário \\
+Hospedagem & Vercel/Netlify & Deploy e hosting gratuito \\
+Formulário & EmailJS & Envio de mensagens de contato \\
+Analytics & Google Analytics & Métricas de visitantes \\
+SEO & Next.js & Otimização para motores de busca \\
+\hline
+\end{tabular}
+\end{table}
+
+% ===== DIAGRAMAS UML =====
+\section{Diagramas UML: Modelagem Visual do Sistema}
+
+A Unified Modeling Language (UML) \cite{kumar2024} é uma linguagem de modelagem visual usada para especificar, visualizar, construir e documentar artefatos de sistemas de software.\footnote{A UML foi padronizada pela Object Management Group (OMG) em 1997.}
+
+\subsection{Diagrama de Casos de Uso}
+
+O diagrama de casos de uso representa as funcionalidades do sistema do ponto de vista do usuário:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+    % Atores
+    \node[draw, circle, minimum size=1cm] (user) at (0,0) {};
+    \node[below] at (0,-0.7) {Usuário};
+    
+    \node[draw, circle, minimum size=1cm] (admin) at (0,-4) {};
+    \node[below] at (0,-4.7) {Administrador};
+    
+    % Sistema
+    \draw[thick] (3,-2.5) ellipse (3cm and 4cm);
+    \node[above] at (3,1.7) {\textbf{Sistema de Gestão}};
+    
+    % Casos de uso
+    \node[draw, ellipse, align=center] (login) at (3,0.5) {Fazer Login};
+    \node[draw, ellipse, align=center] (cadastro) at (3,-1) {Cadastrar\\Produto};
+    \node[draw, ellipse, align=center] (relatorio) at (3,-2.5) {Gerar\\Relatório};
+    \node[draw, ellipse, align=center] (config) at (3,-4) {Configurar\\Sistema};
+    
+    % Relacionamentos
+    \draw[->] (user) -- (login);
+    \draw[->] (user) -- (cadastro);
+    \draw[->] (user) -- (relatorio);
+    \draw[->] (admin) -- (config);
+    \draw[->] (admin) -- (relatorio);
+\end{tikzpicture}
+\caption{Diagrama de Casos de Uso}
+\label{fig:use-case}
+\end{figure}
+
+\subsection{Diagrama de Classes}
+
+O diagrama de classes mostra a estrutura estática do sistema:
+
+\begin{verbatim}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/diagrama-classes.png}
+\caption{Diagrama de Classes do Sistema}
+\label{fig:class-diagram}
+\end{figure}
+\end{verbatim}
+
+\subsection{Outros Diagramas UML Importantes}
+
+\begin{itemize}
+    \item \textbf{Diagrama de Sequência:} Mostra a interação entre objetos ao longo do tempo
+    \item \textbf{Diagrama de Atividades:} Representa o fluxo de trabalho ou processo
+    \item \textbf{Diagrama de Componentes:} Mostra a organização física dos componentes
+    \item \textbf{Diagrama de Implantação:} Representa a arquitetura física do sistema
+    \item \textbf{Diagrama de Estados:} Mostra os estados de um objeto e suas transições
+\end{itemize}
+
+\textbf{Ferramentas recomendadas:} Draw.io, Lucidchart, PlantUML, StarUML, Enterprise Architect
+
+% ===== DEVOPS =====
+\section{DevOps: Infraestrutura, Automação e Entrega Contínua}
+
+DevOps \cite{wang2023} é uma cultura e conjunto de práticas que integra desenvolvimento de software (Dev) e operações de TI (Ops), focando em automação, colaboração e entrega contínua.
+
+\subsection{Pipeline CI/CD}
+
+O pipeline de integração e entrega contínua é fundamental para automação:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    every node/.style={rectangle, draw, rounded corners, 
+                       fill=secondarycolor!20, 
+                       text width=2cm, 
+                       align=center,
+                       font=\small,
+                       minimum height=1cm}
+]
+\node (code) {Code};
+\node (build) [right of=code, xshift=1cm] {Build};
+\node (test) [right of=build, xshift=1cm] {Test};
+\node (deploy) [right of=test, xshift=1cm] {Deploy};
+\node (monitor) [right of=deploy, xshift=1cm] {Monitor};
+
+\draw[->, thick] (code) -- (build);
+\draw[->, thick] (build) -- (test);
+\draw[->, thick] (test) -- (deploy);
+\draw[->, thick] (deploy) -- (monitor);
+\draw[->, thick, dashed] (monitor) to[bend right=45] (code);
+\end{tikzpicture}
+\caption{Pipeline CI/CD}
+\label{fig:cicd}
+\end{figure}
+
+\subsection{Exemplo de Configuração CI/CD}
+
+Exemplo de arquivo `.gitlab-ci.yml` ou GitHub Actions:
+
+\begin{verbatim}
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+
+test:
+  stage: test
+  script:
+    - npm run test
+    - npm run lint
+
+deploy:
+  stage: deploy
+  script:
+    - npm run deploy
+  only:
+    - main
+\end{verbatim}
+
+\subsection{Infraestrutura como Código}
+
+\begin{table}[H]
+\centering
+\caption{Ferramentas DevOps Utilizadas}
+\label{tab:devops-tools}
+\begin{tabular}{|l|l|p{6cm}|}
+\hline
+\textbf{Categoria} & \textbf{Ferramenta} & \textbf{Finalidade} \\
+\hline
+Controle de Versão & Git + GitHub & Versionamento de código \\
+CI/CD & GitHub Actions & Automação de build e deploy \\
+Containerização & Docker & Empacotamento de aplicações \\
+Orquestração & Kubernetes & Gerenciamento de containers \\
+Monitoramento & Prometheus + Grafana & Métricas e dashboards \\
+Logs & ELK Stack & Centralização de logs \\
+IaC & Terraform & Provisionamento de infraestrutura \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Infraestrutura do Sistema}
+
+Esta seção documenta como o sistema funciona em diferentes ambientes e plataformas.
+
+\subsubsection{Arquitetura de Rede}
+
+\begin{table}[H]
+\centering
+\caption{Componentes de Infraestrutura}
+\label{tab:infrastructure}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Componente} & \textbf{Descrição} \\
+\hline
+\textbf{Rede Local (LAN)} & 
+\begin{itemize}[leftmargin=*, nosep]
+    \item Servidor local para desenvolvimento e testes
+    \item Rede interna com IP fixo (ex: 192.168.1.x)
+    \item Acesso via VPN para equipe remota
+    \item Backup local diário em servidor dedicado
+\end{itemize} \\
+\hline
+\textbf{Cloud (Nuvem)} & 
+\begin{itemize}[leftmargin=*, nosep]
+    \item Hospedagem em AWS/Azure/Google Cloud
+    \item Auto-scaling para gerenciar demanda
+    \item CDN para distribuição de conteúdo estático
+    \item Backup automático em múltiplas regiões
+    \item Ambiente de produção e homologação separados
+\end{itemize} \\
+\hline
+\textbf{Dispositivos Móveis} & 
+\begin{itemize}[leftmargin=*, nosep]
+    \item API REST para comunicação mobile
+    \item Suporte para iOS e Android
+    \item Sincronização offline com cache local
+    \item Push notifications para atualizações
+    \item Responsive design para tablets
+\end{itemize} \\
+\hline
+\textbf{Segurança} & 
+\begin{itemize}[leftmargin=*, nosep]
+    \item Firewall e SSL/TLS para comunicação segura
+    \item Autenticação JWT e OAuth 2.0
+    \item Criptografia de dados sensíveis
+    \item Monitoramento de acessos e logs de auditoria
+\end{itemize} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Diagrama de Infraestrutura}
+
+Para ilustrar como os componentes se conectam:
+
+\begin{verbatim}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/diagrama-infraestrutura.png}
+\caption{Diagrama de Infraestrutura do Sistema}
+\label{fig:infrastructure-diagram}
+\end{figure}
+\end{verbatim}
+
+\textbf{Exemplo de descrição:}
+
+\begin{itemize}
+    \item \textbf{Usuários Web:} Acessam via navegador através de HTTPS
+    \item \textbf{Usuários Mobile:} Conectam-se via API REST com autenticação
+    \item \textbf{Banco de Dados:} PostgreSQL em cluster para alta disponibilidade
+    \item \textbf{Storage:} Amazon S3 para arquivos e imagens
+    \item \textbf{Cache:} Redis para otimização de performance
+    \item \textbf{Fila de Mensagens:} RabbitMQ para processamento assíncrono
+\end{itemize}
+
+\subsection{Arquitetura de Deploy}
+
+Para documentar a arquitetura de deployment:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=2cm,
+    component/.style={rectangle, draw, rounded corners, 
+                      fill=secondarycolor!20, 
+                      text width=2.5cm, 
+                      align=center,
+                      minimum height=1.2cm}
+]
+\node[component] (lb) {Load Balancer};
+\node[component, below left of=lb] (app1) {App Server 1};
+\node[component, below right of=lb] (app2) {App Server 2};
+\node[component, below of=app1, xshift=1.5cm] (db) {Database};
+\node[component, below of=db] (cache) {Redis Cache};
+
+\draw[<->, thick] (lb) -- (app1);
+\draw[<->, thick] (lb) -- (app2);
+\draw[<->, thick] (app1) -- (db);
+\draw[<->, thick] (app2) -- (db);
+\draw[<->, thick] (app1) -- (cache);
+\draw[<->, thick] (app2) -- (cache);
+\end{tikzpicture}
+\caption{Arquitetura de Deployment}
+\label{fig:deployment}
+\end{figure}
+
+\subsection{Métricas e SLA}
+
+Definir métricas importantes para monitoramento:
+
+\begin{itemize}
+    \item \textbf{Disponibilidade:} 99.9\% (uptime)
+    \item \textbf{Tempo de Resposta:} < 200ms (média)
+    \item \textbf{Taxa de Erro:} < 0.1\%
+    \item \textbf{Throughput:} 1000 requisições/segundo
+    \item \textbf{Deploy Frequency:} Diário
+    \item \textbf{Lead Time:} < 1 hora
+    \item \textbf{MTTR:} < 30 minutos (Mean Time To Recovery)
+\end{itemize}
+
+\newpage
+\section*{Conclusão}
+
+Este documento apresenta os principais artefatos necessários para a documentação completa de um projeto de software. Cada seção fornece exemplos práticos de como inserir e formatar os diferentes tipos de artefatos utilizando \LaTeX.
+
+Os artefatos documentados incluem:
+\begin{itemize}
+    \item \textbf{CANVAS:} Modelo de negócio e estratégia
+    \item \textbf{SWOT:} Análise estratégica de forças, fraquezas, oportunidades e ameaças
+    \item \textbf{UX/UI:} Design de interface e experiência do usuário
+    \item \textbf{Website:} Estrutura e especificações técnicas web
+    \item \textbf{Diagramas UML:} Modelagem visual do sistema
+    \item \textbf{DevOps:} Infraestrutura, automação e práticas de entrega contínua
+\end{itemize}
+
+\vspace{1cm}
+\noindent\rule{\textwidth}{0.5pt}
+\vspace{0.3cm}
+
+\noindent\textit{Para incluir imagens personalizadas, substitua os caminhos de exemplo (imgs/img\_001.jpg) pelos caminhos reais dos seus arquivos. Utilize ferramentas especializadas como Draw.io, Figma, PlantUML e outras mencionadas ao longo do documento para criar artefatos de qualidade profissional.}
+
+\newpage
+\addcontentsline{toc}{section}{Referências}
+\bibliographystyle{plainnat}
+\bibliography{referencias}
+
+\end{document}
