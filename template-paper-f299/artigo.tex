@@ -375,11 +375,17 @@ O reconhecimento correto de planetas efetivamente exibidos é contabilizado como
 
 A percepção dos planetas é tratada como um dado positivo para a inferência do pré-diagnóstico, pois contribui para a classificação do desempenho atencional da criança em relação aos resultados esperados. Por sua vez, a ausência de reconhecimento desses estímulos é considerada um dado complementar que também compõe a análise final, porém, negativamente. Nesta fase, foram aplicados procedimentos de atenção sustentada.
 
-Para a construção do dispositivo de controle da IoT, foram empregados os seguintes componentes eletrônicos: uma placa de desenvolvimento Arduino, sete botões do tipo \textit{push-button}, sete resistores de 10 k$\Omega$, uma protoboard e cabos de conexão. Os botões foram conectados às portas digitais do Arduino, configuradas como entradas com resistores pull-down para garantir leituras estáveis. Dessa forma, ao término de cada rodada da segunda fase do jogo, o participante registra os planetas que conseguiu observar, pressionando o botão correspondente a ele. O Arduino atua como uma interface de comunicação de hardware, detectando o pressionamento físico dos botões IoT. Por meio da comunicação serial, o microcontrolador transmite o evento acionado ao sistema. O servidor é responsável por receber e interpretar este sinal do botão selecionado e, na sequência, acionar a função que contabiliza os acertos e os erros de inibição do participante para a fase.
-// TODO: colocar foto do arduino 
+Para a construção do dispositivo de controle da IoT, foram empregados os seguintes componentes eletrônicos: uma placa de desenvolvimento Arduino, sete botões do tipo \textit{push-button}, sete resistores de 10 k$\Omega$, três protoboard e cabos de conexão. Os botões foram conectados às portas digitais do Arduino, configuradas como entradas com resistores pull-down para garantir leituras estáveis. Dessa forma, ao término de cada rodada da segunda fase do jogo, o participante registra os planetas que conseguiu observar, pressionando o botão correspondente a ele. O Arduino atua como uma interface de comunicação de hardware, detectando o pressionamento físico dos botões IoT. Por meio da comunicação serial, o microcontrolador transmite o evento acionado ao sistema. O servidor é responsável por receber e interpretar este sinal do botão selecionado e, na sequência, acionar a função que contabiliza os acertos e os erros de inibição do participante para a fase.
 
-Em futuras iterações do projeto, planeja-se o aperfeiçoamento estético e ergonômico do controle, por meio da substituição dos botões convencionais por peças personalizadas, fabricadas via impressão 3D, com design mais atrativo e ergonômico para crianças. Além disso, planeja-se construir uma case para o controle utilizando filamentos de garrafa PET, visando a sustentabilidade ambiental do projeto.
-// TODO: colocar foto do arduino 3D
+\begin{figure}[H]
+    \centering
+    \caption{Controle IoT}%
+    \label{fig:arduino}
+    \includegraphics[width=\textwidth]{iot.jpeg}%
+    \SourceOrNote{Autoria Própria (2026)}
+\end{figure}
+
+Para o aperfeiçoamento estético e ergonômico do controle, os botões convencionais foram substituídos por peças personalizadas, fabricadas via impressão 3D e customizadas com adesivos ilustrativos dos planetas da fase 2, resultando em um design mais atrativo para o público infantil. Entretanto, ainda planeja-se construir uma case para o controle utilizando filamentos de garrafa PET, visando a sustentabilidade ambiental do projeto e otimização ergonômica.
 
 \begin{figure}[H]
     \centering
