@@ -408,13 +408,29 @@ Antes do treinamento, os atributos são organizados e aplica-se o \textit{Standa
 
 A predição ocorre por meio de um serviço \textit{REST} implementado em \textit{FastAPI}, executado em um contêiner separado e exposto no endpoint \texttt{/predict}. Esse serviço recebe as métricas agregadas, aplica o escalonamento e calcula a probabilidade de classificação positiva. A decisão final é obtida por um limiar de 0,5. A comunicação entre o \textit{backend} principal e o módulo de IA ocorre por requisição \textit{HTTP}; ao final da fase 3, o servidor reúne as métricas das três fases e as envia ao serviço, que retorna a avaliação final para armazenamento e exibição ao usuário.
 
-Considerando a análise realizada pelo profissional e os resultados a serem apresentados aos pais ou responsáveis, o pré-diagnóstico é disponibilizado em relatório com linguagem clara, acessível e visualmente intuitiva. A mensagem interpretativa é redigida sem termos técnicos, de modo a oferecer uma avaliação direta do desempenho da criança em relação aos padrões esperados. A Figura \ref{fig:relatorio} exemplifica o layout e o conteúdo do relatório gerado pelo sistema, que visa facilitar a compreensão dos resultados e orientar as decisões futuras.
+Considerando a análise realizada pelo profissional e os resultados a serem apresentados aos pais ou responsáveis, o pré-diagnóstico é disponibilizado em relatório com linguagem clara, acessível e visualmente intuitiva, com disponilidade para \textit{download}. A mensagem interpretativa é redigida sem termos técnicos, de modo a oferecer uma avaliação direta do desempenho da criança em relação aos padrões esperados. A Figura \ref{fig:relatorio} exemplifica o layout e o conteúdo do relatório gerado pelo sistema, que visa facilitar a compreensão dos resultados e orientar as decisões futuras. As Figuras \ref{fig:relatorio-pdf-1} e \ref{fig:relatorio-pdf-2} exemplificam o relatório baixado pelo profissional.
 
 \begin{figure}[H]
     \centering
-    \caption{Relatório de Pré-diagnóstico}%
+    \caption{Relatório de pré-diagnóstico}%
     \label{fig:relatorio}%
     \includegraphics[width=\textwidth]{relatorio.png}%
+    \SourceOrNote{Autoria Própria (2026)}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Relatório de pré-diagnóstico em PDF}%
+    \label{fig:relatorio-pdf-1}%
+    \includegraphics[width=\textwidth]{relatorio-pdf-pg1.png}%
+    \SourceOrNote{Autoria Própria (2026)}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Relatório de pré-diagnóstico em PDF}%
+    \label{fig:relatorio-pdf-2}%
+    \includegraphics[width=\textwidth]{relatorio-pdf-pg2.png}%
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
 
