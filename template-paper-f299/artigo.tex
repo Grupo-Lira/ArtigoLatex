@@ -270,14 +270,6 @@ O profissional, já com cadastro e login previamente definidos na plataforma, as
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \caption{Ilustração da calibração do olhar}%
-    \label{fig:calibracao2}
-    \includegraphics[width=\textwidth]{calibracao2.png}%
-    \SourceOrNote{Autoria Própria (2026)}
-\end{figure}
-
 A calibração é realizada antes do início do jogo, de modo que o sistema ajuste o mapeamento entre as características do olhar e as posições na tela. O procedimento inclui nove pontos de fixação (estrelas) dispostos em uma grade 3×3. O participante é instruído a fixar o olhar em cada ponto por cerca de cinco segundos e a posicionar o cursor sobre a estrela, clicando nela até que esta desapareça. Simultaneamente, o sistema registra as coordenadas oculares. Esse procedimento é essencial para compensar variações individuais na anatomia, postura e distância da câmera, garantindo maior precisão do rastreamento. Concluída a calibração, o sistema encontra‑se apto a interpretar os movimentos oculares durante as fases do jogo.
 
 Antes de cada fase, existem as instruções da mesma. Em seguida, o usuário inicia a primeira etapa do teste. 
@@ -317,6 +309,16 @@ Na segunda fase, o participante deve manter o foco em cinco estrelas estáticas,
     \includegraphics[width=\textwidth]{perguntas-segunda-fase.png}%
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Jogar com mouse na segunda fase}%
+    \label{fig:controle-segunda-fase}
+    \includegraphics[width=\textwidth]{controle-segunda-fase.png}%
+    \SourceOrNote{Autoria Própria (2026)}
+\end{figure}
+
+Vale citar que nessa fase também é possível jogar com o mouse, caso o participante não consiga utilizar o controle \textit{IoT}, conforme ilustrado na Figura \ref{fig:controle-segunda-fase}.
 
 Nesta etapa, pode-se citar semelhança ao teste realizado em \cite{video_atencao}. Nesse teste, a instrução inicial é contar quantos passes de bola o time de branco realiza, ao final, após a resposta, uma pergunta adicional questiona se o participante observou uma distração (urso dançando) durante o jogo de basquete. Dessa forma, o participante não procura pela distração, mas, caso consiga detectá-la, infere-se que impacta positivamente no pré-diagnóstico, pois a instrução inicial direcionava o foco para os alvos, tornando a distração menos atraente.
 
@@ -434,7 +436,15 @@ Para uma melhor compreensão do funcionamento do sistema, a Figura \ref{fig:flux
     \SourceOrNote{Autoria Própria (2026)}
 \end{figure}
 
-Na etapa 1, ocorre a calibração dos olhos do jogador, processo em que o sistema identifica e ajusta os pontos de fixação ocular do usuário antes do início do jogo, garantindo a precisão do rastreamento. Em seguida, na etapa 2, há uma tomada de decisão para verificar se o participante irá jogar no modo de treinamento, o qual pode ser habilitado apenas pelo administrador quando houver necessidade de aumentar a base de dados. Na etapa 3, é executada a coleta das métricas TDC, que ocorre automaticamente durante as três fases do jogo. Nessa etapa, o sistema processa e registra parâmetros como número de acertos, erros de omissão, erros de comissão, tempo de reação e variabilidade temporal das respostas. Caso o modo de treinamento esteja habilitado, na etapa 4, o sistema armazena as métricas TDC em uma base de dados para permitir a retroalimentação da IA, que realiza a análise comparativa entre os dados do indivíduo e a base existente. Vale ressaltar que a etapa 4 será implementada em iterações futuras. Já na etapa 5, quando o modo de treinamento não está ativado, o sistema armazena as métricas TDC em uma base de dados para que a IA possa fazer a análise. Ao final, na etapa 6, o jogo exibe um feedback ao usuário, indicando o seu desempenho atencional.
+Na etapa 1, ocorre a calibração dos olhos do jogador, processo em que o sistema identifica e ajusta os pontos de fixação ocular do usuário antes do início do jogo, garantindo a precisão do rastreamento. Em seguida, na etapa 2, há uma tomada de decisão para verificar se o participante irá jogar no modo de treinamento, ilustrado na Figura \ref{fig:modo-treinamento}, o qual pode ser habilitado apenas pelo administrador quando houver necessidade de aumentar a base de dados. Na etapa 3, é executada a coleta das métricas TDC, que ocorre automaticamente durante as três fases do jogo. Nessa etapa, o sistema processa e registra parâmetros como número de acertos, erros de omissão, erros de comissão, tempo de reação e variabilidade temporal das respostas. Caso o modo de treinamento esteja habilitado, na etapa 4, o sistema armazena as métricas TDC em uma base de dados para permitir a retroalimentação da IA, que realiza a análise comparativa entre os dados do indivíduo e a base existente. Vale ressaltar que a etapa 4 será implementada em iterações futuras. Já na etapa 5, quando o modo de treinamento não está ativado, o sistema armazena as métricas TDC em uma base de dados para que a IA possa fazer a análise. Ao final, na etapa 6, o jogo exibe um feedback ao usuário, indicando o seu desempenho atencional.
+
+\begin{figure}[H]
+    \centering
+    \caption{Modo de treinamento}%
+    \label{fig:modo-treinamento}
+    \includegraphics[width=\textwidth]{modo-treinamento.png}%
+    \SourceOrNote{Autoria Própria (2026)}
+\end{figure}
 
 Uma vez estabelecida a lógica de execução das etapas, a implementação técnica do sistema fundamenta-se em uma arquitetura cliente-servidor. Ao iniciar a fase 1, estabelece-se uma conexão via \textit{WebSocket} entre o cliente e o servidor. Em seguida, o servidor identifica o cliente conectado, que envia as coordenadas das estrelas para o endpoint $\texttt{/iniciar\_fase1}$. O processo de \textit{eye tracking} é então iniciado, e o cliente passa a transmitir as coordenadas dos olhos a cada 1 segundo para $\texttt{/gaze\_data\_fase1}$. Paralelamente, o servidor seleciona uma das cinco estrelas como alvo atual, enquanto o cliente permanece em escuta por meio de $\texttt{/fase1\_iniciada}$, responsável por destacar a estrela correspondente e manter o envio das coordenadas oculares. Esse procedimento se repete até que todas as estrelas sejam visualizadas por, no mínimo, 5 segundos, de modo que o participante fixe o olhar no alvo até sua desaparecimento da tela. Ao final da fase, o servidor salva o objeto $\texttt{ExperimentosFase1Schema}$ no banco de dados, contendo as informações do paciente, a data e a hora do teste, um array do histórico de olhar da criança, com o alvo, as coordenadas e o estado de fixação, além de um array com o resultado de cada alvo, indicando métricas de tempo e o motivo do término. Após o armazenamento desses dados, o servidor calcula as métricas TDC da fase 1 e salva o objeto $\texttt{EstatisticasFase1Schema}$ com: número de acertos (fixação por 5 segundos), número de erros de omissão (demora de 10 segundos ou mais para iniciar a fixação) e erros de comissão (início da fixação antes de 10 segundos, sem manutenção do foco por 5 segundos). Essas métricas são enviadas ao cliente por meio de $\texttt{/fase\_concluida}$. 
 
